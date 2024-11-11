@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Awaiken" />
+    <!-- Page Title -->
+    <title>AGTc</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="favicon/android-chrome-192x192.png"
+    />
+
+    <link rel="stylesheet" href="css/language.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap Css -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/language.css" />
+
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <link href="css/navbar.css" rel="stylesheet" media="screen" />
+  </head>
+  <style>
+    .service-body-title h3 {
+      text-align: center; /* Center the text horizontally */
+      margin: 0 auto; /* Ensure there’s no margin that might affect alignment */
+      display: block; /* Ensure the element is block-level for proper centering */
+      font-weight: bold; /* Optional: Make the text bold */
+      margin-bottom: 200px;
+    }
+
+    .goog-te-gadget-simple {
+      background-color: #bf1e2e !important; /* Red background */
+      border: 2px solid #bf1e2e !important; /* Navy blue border */
+      border-radius: 50px; /* Makes the button round */
+      color: #fff !important; /* White text */
+      font-size: 10pt !important; /* Slightly larger font */
+      font-weight: bold !important; /* Bold text */
+      display: inline-block;
+      padding: 5px 10px !important; /* Padding for button feel */
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Smooth hover transition */
+    }
+
+    /* Remove Google Translate icon */
+    .goog-te-gadget-icon {
+      display: none !important;
+    }
+
+    /* Style the text inside the button */
+    .goog-te-gadget-simple span {
+      color: #fff !important; /* Ensure text inside the button is white */
+    }
+
+    /* Add a hover effect to the button */
+    .goog-te-gadget-simple:hover {
+      background-color: #12223b !important; /* Dark blue on hover */
+      color: #bf1e2e !important; /* Red text on hover */
+    }
+    .image-container {
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center; /* Centers vertically */
+      height: 75px; /* Set a height for the container */
+    }
+
+    .image-container img {
+      max-width: 100%; /* Optional: Limits the image width */
+      height: 100px;
+      padding-bottom: 30px; /* Maintains the image aspect ratio */
+    }
+  </style>
+
+  <body>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <img src="images/726.gif" alt="" srcset="" />
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar-container navbar-expand-lg">
+          <!-- Logo Start -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <!-- First Logo -->
+            <img id="image-logos" src="images/logo-white.png" alt="Logo" />
+          </a>
+          <!-- Logo End -->
+
+          <!-- Toggle Button for Mobile -->
+
+          <!-- Main Menu Start -->
+          <div class="collapse navbar-collapse main-menu" id="navbarMenu">
+            <div class="nav-menu-wrapper">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" id="navHome">Home</a>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="about.html" id="navAbout">About</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="about.html"
+                        id="navChairmansMessage"
+                        >CHAIRMAN'S MESSAGE</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="about-hse.html"
+                        id="navHsePolicy"
+                        >HSE & QC POLICY</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="staff.html"
+                        id="navManagementStaff"
+                        >MANAGEMENT & STAFF</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="vahcle.html"
+                        id="navVehiclesEquipments"
+                        >VEHICLES & EQUIPMENTS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="certificate.html"
+                    id="navCertificate"
+                    >certificate</a
+                  >
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="mep.html" id="navDivisions"
+                    >Divisions</a
+                  >
+                  <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mep.html" id="navMep">MEP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="carpentry.html"
+                        id="navCarpentry"
+                        >CARPENTRY
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="#" id="navProjects">Projects</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="project-on.html"
+                        id="navOngoingProjects"
+                        >ongoing projects</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="project.html"
+                        id="navCompletedProjects"
+                        >completed projects</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html" id="navCareer"
+                    >career</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="navContact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Language Selector (Aligned to the right) -->
+          </div>
+          <div class="navbar-end">
+            <button
+              id="language-button "
+              onclick="changeLanguage()"
+              class="language-select-ghost-button desktop"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                ></path>
+              </svg>
+              <span id="currentLanguage">English</span>
+            </button>
+
+            <div class="sidebar-toggler" onclick="toggleSidebar()">☰</div>
+          </div>
+
+          <div id="mySidebar" class="sidebar">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              onclick="closeSidebar()"
+              >×</a
+            >
+            <div>
+              <a href="index.html" id="navHome">Home</a>
+              <a class="dropdown-btn">About</a>
+              <div class="dropdown-container">
+                <a href="about.html" id="navChairmansMessage"
+                  >CHAIRMAN'S MESSAGE</a
+                >
+                <a href="about-hse.html" id="navHsePolicy">HSE & QC POLICY</a>
+                <a href="staff.html" id="navManagementStaff"
+                  >MANAGEMENT & STAFF</a
+                >
+                <a href="vahcle.html" id="navVehiclesEquipments"
+                  >VEHICLES & EQUIPMENTS</a
+                >
+              </div>
+              <a class="dropdown-btn">Projects</a>
+              <div class="dropdown-container">
+                <a href="project-on.html" id="navOngoingProjects"
+                  >Ongoing Projects</a
+                >
+                <a href="project.html" id="navCompletedProjects"
+                  >Completed Projects</a
+                >
+              </div>
+              <a href="certificate.html" id="navCertificate">Certificate</a>
+              <a class="dropdown-btn">Divisions</a>
+              <div class="dropdown-container">
+                <a href="mep.html" id="navMep">MEP</a>
+                <a href="carpentry.html" id="navCarpentry">Carpentry</a>
+              </div>
+              <a href="career.html" id="navCareer">Career</a>
+              <a href="contact.html" id="navContact">Contact</a>
+            </div>
+
+            <!-- Language Selector -->
+            <button
+              id="language-button"
+              onclick="changeLanguage()"
+              class="language-select-ghost-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                ></path>
+              </svg>
+              <span id="currentLanguage-mobile">English</span>
+            </button>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header parallaxie conatact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header-box">
+              <h1 class="text-anime-style-3" id="page-title">Contact Us</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Information Section Start -->
+    <div class="contact-information">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact-info-item">
+              <div class="icon-box">
+                <img src="images/telephone.png" alt="" />
+              </div>
+              <div class="contact-info-body">
+                <h3 id="call-support-title">call support center 24/7</h3>
+                <div id="phone-numbers">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#bf1e2e"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-headset"
+                    >
+                      <path
+                        d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+                      />
+                      <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                    </svg>
+                    +974 4491 3133<br
+                  /></span>
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#bf1e2e"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-printer"
+                    >
+                      <path
+                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                      />
+                      <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+                      <rect x="6" y="14" width="12" height="8" rx="1" />
+                    </svg>
+                    +974 4491 3129<br
+                  /></span>
+
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#bf1e2e"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-smartphone"
+                    >
+                      <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                      <path d="M12 18h.01" />
+                    </svg>
+                    +974 33529395</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-info-item">
+              <div class="icon-box">
+                <img src="images/mail.png" alt="" />
+              </div>
+              <div class="contact-info-body">
+                <h3 id="write-to-us-title">write to us</h3>
+                <p id="email-address">info@algharafacontracting.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-info-item">
+              <div class="icon-box">
+                <img src="images/map.png" alt="" />
+              </div>
+              <div class="contact-info-body">
+                <h3 id="visit-us-title">visit us</h3>
+                <p id="address">
+                  Palm Tower B 16th floor Office No.1606 West Bay Doha
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Information Section End -->
+
+    <br /><br />
+
+    <!-- Page Contact Us Start -->
+    <div
+      class="contact-us page-contact-us d-flex align-items-center justify-content-center"
+      style="min-height: 100vh"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="contact-form text-center">
+              <div class="section-title">
+                <h2 class="text-anime-style-3" id="ready-to-start">
+                  Ready to get started? Let's chat.
+                </h2>
+                <p id="fill-form">
+                  Please fill out the form below, and a member of our team will
+                  get back to you as soon as possible.
+                </p>
+              </div>
+              <form
+                id="contactForm"
+                action="/submit-form"
+                method="POST"
+                data-toggle="validator"
+              >
+                <div class="row">
+                  <div class="form-group col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter Your name"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group col-md-6 mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter Your email"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="phone"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Phone number"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group col-md-12 mb-4">
+                    <textarea
+                      name="msg"
+                      class="form-control"
+                      id="msg"
+                      rows="3"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button
+                      type="submit"
+                      class="btn btn-default"
+                      id="submit-btn"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Contact Us End -->
+    <div style="width: 100%; height: 500px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3221.5028863058324!2d51.52487207538577!3d25.318294977633172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDE5JzA1LjkiTiA1McKwMzEnMzguOCJF!5e1!3m2!1sen!2sin!4v1730876430389!5m2!1sen!2sin"
+        style="width: 100%; height: 100%; border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <!-- Footer Start -->
+    <footer class="main-footer" style="padding: 60px 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- About Footer Start -->
+          <div class="col-lg-4 col-md-12 mb-4 text-center">
+            <div class="about-footer">
+              <div class="footer-logo">
+                <figure>
+                  <img src="images/AGTC-Logo_Red-White.png" alt="" />
+                </figure>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Transforming Visions into Reality: Your Trusted Partner in
+                  Construction Excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- About Footer End -->
+
+          <!-- Footer Links Start -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4 text-center">
+            <div class="footer-links">
+              <h3>Company</h3>
+              <ul style="list-style: none; padding-left: 30px">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Links End -->
+
+          <!-- Footer Contact Info Box Start -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4 text-center">
+            <div class="footer-links footer-contact-box">
+              <h3 style="padding-left: 40px">Contact Us</h3>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/telephone.png" alt="" />
+                </div>
+                <p>(+974) 66554433</p>
+              </div>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/mail.png" alt="" />
+                </div>
+                <p>info@algharafacontracting.com</p>
+              </div>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/map.png" alt="" />
+                </div>
+                <p>1606, Palm Tower B, St. No. 810 Zone No. 60, Doha - Qatar</p>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Contact Info Box End -->
+        </div>
+
+        <!-- ISO Certifications Row Start -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="margin-top: 40px"
+        >
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 14001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">Environmental management<br />system</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 45001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">
+              Occupational Health and<br />safety management system
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 9001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">Quality<br />management system</p>
+          </div>
+        </div>
+        <!-- ISO Certifications Row End -->
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer-copyright" style="margin-top: 40px">
+          <div class="row align-items-center text-center">
+            <div class="col-lg-6 col-md-7 mb-3 mb-md-0">
+              <p>Copyright © 2024 AGTC. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="footer-social-links">
+                <ul
+                  style="
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                  "
+                >
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright Section End -->
+      </div>
+    </footer>
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script src="../../assets/js/theme-panel.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Collect form data
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var phone = document.getElementById("phone").value;
+          var subject = document.getElementById("subject").value;
+          var message = document.getElementById("msg").value;
+
+          // Send email using SMTP.js
+          Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "agtcmail51@gmail.com",
+            Password: "A81C514EB2937FA654CCFCC745D42769DD42",
+            To: "agtcmail51@gmail.com",
+            From: "agtcmail51@gmail.com",
+            Subject: `New Contact Form Submission: ${subject}`,
+            Body: `
+                Name: ${name} <br/>
+                Email: ${email} <br/>
+                Phone: ${phone} <br/>
+                Subject: ${subject} <br/>
+                Message: ${message}
+            `,
+          })
+            .then(function (response) {
+              if (response === "OK") {
+                alert("Your message has been sent successfully!");
+              } else {
+                alert("There was an error sending your message: " + response);
+              }
+            })
+            .catch(function (error) {
+              alert("Failed to send email. Please try again later.");
+              console.error(error);
+            });
+        });
+    </script>
+    <script>
+      const translations = {
+        en: {
+          logo: "Your Logo",
+          navHome: "Home",
+          navAbout: "About",
+          navChairmansMessage: "CHAIRMAN'S MESSAGE",
+          navHsePolicy: "HSE & QC POLICY",
+          navManagementStaff: "MANAGEMENT & STAFF",
+          navVehiclesEquipments: "VEHICLES & EQUIPMENTS",
+          navCertificate: "Certificate",
+          navDivisions: "Divisions",
+          navMep: "MEP",
+          navCarpentry: "CARPENTRY",
+          navProjects: "Projects",
+          navOngoingProjects: "Ongoing Projects",
+          navCompletedProjects: "Completed Projects",
+          navCareer: "Career",
+          navContact: "Contact",
+
+          pageTitle: "Contact Us",
+          callSupportTitle: "Call support center 24/7",
+          phoneNumbers: "+974 4491 3133<br>FAX+974 4491 3129<br>+974 33529395",
+          writeToUsTitle: "Write to us",
+          emailAddress: "info@algharafacontracting.com",
+          visitUsTitle: "Visit us",
+          address:
+            "Palm Tower B, 1606, Street No. 810 Zone No.60, P.O. Box: 6488, Doha - Qatar",
+          readyToStart: "Ready to get started? Let's chat.",
+          fillForm:
+            "Please fill out the form below, and a member of our team will get back to you as soon as possible.",
+          submitButton: "Submit",
+        },
+        ar: {
+          logo: "شعارك",
+          navHome: "الرئيسية",
+          navAbout: "من نحن",
+          navChairmansMessage: "رسالة الرئيس",
+          navHsePolicy: "سياسة الصحة والسلامة",
+          navManagementStaff: "الإدارة والموظفين",
+          navVehiclesEquipments: "المركبات والمعدات",
+          navCertificate: "الشهادات",
+          navDivisions: "الأقسام",
+          navMep: "MEP",
+          navCarpentry: "النجارة",
+          navProjects: "المشاريع",
+          navOngoingProjects: "المشاريع الجارية",
+          navCompletedProjects: "المشاريع المنتهية",
+          navCareer: "وظائف",
+          navContact: "تواصل",
+          pageTitle: "اتصل بنا",
+          callSupportTitle: "اتصل بمركز الدعم على مدار الساعة",
+          phoneNumbers:
+            "(Tel)+974 4491 3133<br>(FAX)+974 4491 3129<br(Mob)>+974 33529395",
+          writeToUsTitle: "اكتب لنا",
+          emailAddress: "info@algharafacontracting.com",
+          visitUsTitle: "زورونا",
+          address:
+            "برج النخيل ب، 1606، الشارع رقم 810، المنطقة رقم 60، صندوق البريد: 6488، الدوحة - قطر",
+          readyToStart: "هل أنتم مستعدون للبدء؟ دعونا نتحدث",
+          fillForm:
+            "يرجى ملء النموذج أدناه، وسيتواصل معك أحد أعضاء فريقنا في أقرب وقت ممكن",
+          submitButton: "إرسال",
+        },
+      };
+
+      function translate(language) {
+        // Update menu items based on the selected language
+        document.getElementById("navHome").innerText =
+          translations[language].navHome;
+        document.getElementById("navAbout").innerText =
+          translations[language].navAbout;
+        document.getElementById("navChairmansMessage").innerText =
+          translations[language].navChairmansMessage;
+        document.getElementById("navHsePolicy").innerText =
+          translations[language].navHsePolicy;
+        document.getElementById("navManagementStaff").innerText =
+          translations[language].navManagementStaff;
+        document.getElementById("navVehiclesEquipments").innerText =
+          translations[language].navVehiclesEquipments;
+        document.getElementById("navCertificate").innerText =
+          translations[language].navCertificate;
+        document.getElementById("navDivisions").innerText =
+          translations[language].navDivisions;
+        document.getElementById("navMep").innerText =
+          translations[language].navMep;
+        document.getElementById("navCarpentry").innerText =
+          translations[language].navCarpentry;
+        document.getElementById("navProjects").innerText =
+          translations[language].navProjects;
+        document.getElementById("navOngoingProjects").innerText =
+          translations[language].navOngoingProjects;
+        document.getElementById("navCompletedProjects").innerText =
+          translations[language].navCompletedProjects;
+        document.getElementById("navCareer").innerText =
+          translations[language].navCareer;
+        document.getElementById("navContact").innerText =
+          translations[language].navContact;
+
+        document.getElementById("page-title").innerHTML =
+          translations[language].pageTitle;
+        document.getElementById("call-support-title").innerHTML =
+          translations[language].callSupportTitle;
+
+        document.getElementById("write-to-us-title").innerHTML =
+          translations[language].writeToUsTitle;
+        document.getElementById("email-address").innerHTML =
+          translations[language].emailAddress;
+        document.getElementById("visit-us-title").innerHTML =
+          translations[language].visitUsTitle;
+        document.getElementById("address").innerHTML =
+          translations[language].address;
+        document.getElementById("ready-to-start").innerHTML =
+          translations[language].readyToStart;
+        document.getElementById("fill-form").innerHTML =
+          translations[language].fillForm;
+        document.getElementById("submit-btn").innerHTML =
+          translations[language].submitButton;
+      }
+    </script>
+
+    <!-- Google Translate API -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+
+  <!-- Mirrored from demo.awaikenthemes.com/html-preview/ATGC/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 07:34:29 GMT -->
+</html>

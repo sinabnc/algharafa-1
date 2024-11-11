@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Page Title -->
+    <title>AGTc</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="favicon/android-chrome-192x192.png"
+    />
+
+    <!-- Bootstrap Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Css -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/language.css" />
+
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <link href="css/navbar.css" rel="stylesheet" media="screen" />
+  </head>
+  <style>
+    .service-body-title h3 {
+      text-align: center;
+      /* Center the text horizontally */
+      margin: 0 auto;
+      /* Ensure there’s no margin that might affect alignment */
+      display: block;
+      /* Ensure the element is block-level for proper centering */
+      font-weight: bold;
+      /* Optional: Make the text bold */
+      margin-bottom: 200px;
+    }
+
+    .table {
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    .page-number {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+    }
+
+    .material-box,
+    .color-box {
+      border: 1px solid #ddd;
+    }
+
+    .our-services {
+      padding: 40px 0;
+    }
+
+    .title {
+      color: #d61c4e;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .table {
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #saw {
+      background-color: #e9f7fe;
+    }
+
+    .table th,
+    .table td {
+      text-align: center;
+    }
+
+    /* mockup code */
+    .table-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-header {
+      font-weight: bold;
+      font-size: 24px;
+      color: #d32f2f;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .pdf {
+      background: #ffffff;
+      border: solid 1px #e6e6e6;
+      border-radius: 2px;
+      display: inline-block;
+      height: 100px;
+      line-height: 100px;
+      margin: 5px;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      width: 100px;
+    }
+
+    .pdf span {
+      background: #f2594b;
+      border-radius: 4px;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: normal;
+      padding: 5px 10px;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    .pdf span:last-child {
+      margin-left: -20px;
+    }
+
+    .pdf:before,
+    .pdf:after {
+      background: #ffffff;
+      border: solid 3px #9fb4cc;
+      border-radius: 4px;
+      content: "";
+      display: block;
+      height: 35px;
+      left: 50%;
+      margin: -17px 0 0 -12px;
+      position: absolute;
+      top: 50%;
+      /*transform:translate(-50%,-50%);*/
+
+      width: 25px;
+    }
+
+    .pdf:hover:before,
+    .pdf:hover:after {
+      background: #e2e8f0;
+    }
+
+    /*a:before{transform:translate(-30%,-60%);}*/
+
+    .pdf:before {
+      margin: -23px 0 0 -5px;
+    }
+
+    .pdf:hover {
+      background: #e2e8f0;
+      border-color: #9fb4cc;
+    }
+
+    .pdf:active {
+      background: #dae0e8;
+      box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    .pdf span:first-child {
+      display: none;
+    }
+
+    .pdf:hover span:first-child {
+      display: inline-block;
+    }
+
+    .pdf:hover span:last-child {
+      display: none;
+    }
+
+    /* custom code for the demo */
+
+    html,
+    button,
+    input,
+    select,
+    textarea {
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+        "Helvetica Neue", Arial, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    html {
+      display: table;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #ffffff;
+      display: table-cell;
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .goog-te-gadget-simple {
+      background-color: #bf1e2e !important;
+      /* Red background */
+      border: 2px solid #bf1e2e !important;
+      /* Navy blue border */
+      border-radius: 50px;
+      /* Makes the button round */
+      color: #fff !important;
+      /* White text */
+      font-size: 10pt !important;
+      /* Slightly larger font */
+      font-weight: bold !important;
+      /* Bold text */
+      display: inline-block;
+      padding: 5px 10px !important;
+      /* Padding for button feel */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      /* Smooth hover transition */
+    }
+
+    /* Remove Google Translate icon */
+    .goog-te-gadget-icon {
+      display: none !important;
+    }
+
+    /* Style the text inside the button */
+    .goog-te-gadget-simple span {
+      color: #fff !important;
+      /* Ensure text inside the button is white */
+    }
+
+    /* Add a hover effect to the button */
+    .goog-te-gadget-simple:hover {
+      background-color: #12223b !important;
+      /* Dark blue on hover */
+      color: #bf1e2e !important;
+      /* Red text on hover */
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      /* Centers horizontally */
+      align-items: center;
+      /* Centers vertically */
+      height: 75px;
+      /* Set a height for the container */
+    }
+
+    .image-container img {
+      max-width: 100%;
+      /* Optional: Limits the image width */
+      height: 100px;
+      padding-bottom: 30px;
+      /* Maintains the image aspect ratio */
+    }
+  </style>
+
+  <body>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <img src="images/726.gif" alt="" srcset="" />
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar-container navbar-expand-lg">
+          <!-- Logo Start -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <!-- First Logo -->
+            <img id="image-logos" src="images/logo-white.png" alt="Logo" />
+          </a>
+          <!-- Logo End -->
+
+          <!-- Toggle Button for Mobile -->
+
+          <!-- Main Menu Start -->
+          <div class="collapse navbar-collapse main-menu" id="navbarMenu">
+            <div class="nav-menu-wrapper">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" id="navHome">Home</a>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="about.html" id="navAbout">About</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="about.html"
+                        id="navChairmansMessage"
+                        >CHAIRMAN'S MESSAGE</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="about-hse.html"
+                        id="navHsePolicy"
+                        >HSE & QC POLICY</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="staff.html"
+                        id="navManagementStaff"
+                        >MANAGEMENT & STAFF</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="vahcle.html"
+                        id="navVehiclesEquipments"
+                        >VEHICLES & EQUIPMENTS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="certificate.html"
+                    id="navCertificate"
+                    >certificate</a
+                  >
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="mep.html" id="navDivisions"
+                    >Divisions</a
+                  >
+                  <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mep.html" id="navMep">MEP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="carpentry.html"
+                        id="navCarpentry"
+                        >CARPENTRY
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="#" id="navProjects">Projects</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="project-on.html"
+                        id="navOngoingProjects"
+                        >ongoing projects</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="project.html"
+                        id="navCompletedProjects"
+                        >completed projects</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html" id="navCareer"
+                    >career</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="navContact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Language Selector (Aligned to the right) -->
+          </div>
+          <div class="navbar-end">
+            <button
+              id="language-button "
+              onclick="changeLanguage()"
+              class="language-select-ghost-button desktop"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                ></path>
+              </svg>
+              <span id="currentLanguage">English</span>
+            </button>
+
+            <div class="sidebar-toggler" onclick="toggleSidebar()">☰</div>
+          </div>
+
+          <div id="mySidebar" class="sidebar">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              onclick="closeSidebar()"
+              >×</a
+            >
+            <div>
+              <a href="index.html" id="navHome">Home</a>
+              <a class="dropdown-btn">About</a>
+              <div class="dropdown-container">
+                <a href="about.html" id="navChairmansMessage"
+                  >CHAIRMAN'S MESSAGE</a
+                >
+                <a href="about-hse.html" id="navHsePolicy">HSE & QC POLICY</a>
+                <a href="staff.html" id="navManagementStaff"
+                  >MANAGEMENT & STAFF</a
+                >
+                <a href="vahcle.html" id="navVehiclesEquipments"
+                  >VEHICLES & EQUIPMENTS</a
+                >
+              </div>
+              <a class="dropdown-btn">Projects</a>
+              <div class="dropdown-container">
+                <a href="project-on.html" id="navOngoingProjects"
+                  >Ongoing Projects</a
+                >
+                <a href="project.html" id="navCompletedProjects"
+                  >Completed Projects</a
+                >
+              </div>
+              <a href="certificate.html" id="navCertificate">Certificate</a>
+              <a class="dropdown-btn">Divisions</a>
+              <div class="dropdown-container">
+                <a href="mep.html" id="navMep">MEP</a>
+                <a href="carpentry.html" id="navCarpentry">Carpentry</a>
+              </div>
+              <a href="career.html" id="navCareer">Career</a>
+              <a href="contact.html" id="navContact">Contact</a>
+            </div>
+
+            <!-- Language Selector -->
+            <button
+              id="language-button"
+              onclick="changeLanguage()"
+              class="language-select-ghost-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                ></path>
+              </svg>
+              <span id="currentLanguage-mobile">English</span>
+            </button>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="page-header parallaxie"
+      style="
+        background-image: url('https://plus.unsplash.com/premium_photo-1682147355592-dc8677611a7b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Page Header Box Start -->
+            <div class="page-header-box">
+              <h1
+                class="text-anime-style-3"
+                data-cursor="-opaque"
+                id="page-header-title"
+              >
+                CARPENTRY DIVISION
+              </h1>
+              <nav class="wow fadeInUp"></nav>
+            </div>
+            <!-- Page Header Box End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Page Service Single Start -->
+    <section class="our-services hse">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h1 class="title" id="services-title">Our Services</h1>
+            <p class="description" id="services-description">
+              At Al Gharafa Carpentry Division, we pride ourselves on our
+              extensive range of high-quality wooden products, crafted with
+              precision and care. Explore our diverse offerings below:
+            </p>
+            <div class="service-sustainable">
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- Service Sustainable Image Start -->
+                  <div class="service-sustainable-img-1">
+                    <figure class="image-anime reveal">
+                      <img
+                        src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt=""
+                      />
+                    </figure>
+                  </div>
+                  <!-- Service Sustainable Image End -->
+                </div>
+
+                <div class="col-md-6">
+                  <!-- Service Sustainable Image Start -->
+                  <div class="service-sustainable-img-2">
+                    <figure class="image-anime reveal">
+                      <img
+                        src="https://plus.unsplash.com/premium_photo-1684338795288-097525d127f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt=""
+                      />
+                    </figure>
+                  </div>
+                  <!-- Service Sustainable Image End -->
+                </div>
+
+                <div class="col-lg-12">
+                  <!-- Service Sustainable Content Start -->
+                  <div
+                    class="service-sustainable-content"
+                    id="service-content"
+                  ></div>
+                  <!-- Service Sustainable Content End -->
+                </div>
+              </div>
+            </div>
+            <div class="table-container">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th
+                      id="table-sl-no"
+                      style="background-color: #d32f2f; color: #fff"
+                    >
+                      Sl No
+                    </th>
+                    <th
+                      id="table-services"
+                      style="background-color: #d32f2f; color: #fff"
+                    >
+                      Services
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td id="service-wooden-chairs">Wooden Chairs</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td id="service-kitchen-cabinet">Kitchen Cabinet</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td id="service-spindle-moulder">Spindle Moulder</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td id="service-flush-door">Flush Door</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td id="service-panel-door">Panel Door</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td id="service-decor-door">Décor Door</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td id="service-toilet-cubicles">Toilet Cubicles</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="working-process hse" id="saw">
+      <div class="container">
+        <div class="row section-row">
+          <!-- Section Title Start -->
+          <div class="section-title">
+            <h2
+              class="text-anime-style-3"
+              data-cursor="-opaque"
+              id="plant-machineries-title"
+            >
+              Plant and Machineries
+            </h2>
+          </div>
+          <!-- Section Title End -->
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Service Sustainable Image Start -->
+            <div class="service-sustainable-img-1">
+              <figure class="image-anime reveal">
+                <img
+                  src="https://img.freepik.com/free-photo/thickness-planer-machine-woodworking-workshop_1163-3155.jpg?t=st=1728019474~exp=1728023074~hmac=f333012722d9fe064cb5463a6fe63ef9c77a883abff23ceb621e292de723db56&w=826"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <!-- Service Sustainable Image End -->
+          </div>
+
+          <div class="col-md-6">
+            <!-- Service Sustainable Image Start -->
+            <div class="service-sustainable-img-2">
+              <figure class="image-anime reveal">
+                <img
+                  src="https://img.freepik.com/free-photo/carpenter-using-circular-saw-cutting-wooden-boards-construction-details-male-worker-handy-man-with-power-tools_155003-18453.jpg?t=st=1728018878~exp=1728022478~hmac=3ce82f6299159d799000c995d1ced1787e66263fa4e6cf2d1342a877c827cbe1&w=826"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <!-- Service Sustainable Image End -->
+          </div>
+
+          <div class="col-lg-12">
+            <!-- Service Sustainable Content Start -->
+            <div class="service-sustainable-content" id="service-content"></div>
+            <!-- Service Sustainable Content End -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <!-- Working Process Item Start -->
+            <div
+              class="working-process-item wow fadeInUp"
+              data-wow-delay="0.25s"
+            >
+              <div class="service-categories-list wow fadeInUp">
+                <ul id="machinery-list-1">
+                  <li>
+                    <a href="#" id="machinery-panel-saw">Panel Saw Machines</a>
+                  </li>
+                  <li>
+                    <a href="#" id="machinery-wood-surface-planer"
+                      >Wood Surface Planer</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="machinery-spindle-moulder"
+                      >Spindle Moulder</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="machinery-thickness-planer"
+                      >Thickness Planer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Working Process Item End -->
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <!-- Working Process Item Start -->
+            <div
+              class="working-process-item wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div class="service-categories-list wow fadeInUp">
+                <ul id="machinery-list-2">
+                  <li>
+                    <a href="#" id="machinery-radial-arm-saw">Radial Arm Saw</a>
+                  </li>
+                  <li><a href="#" id="machinery-band-saw">Band Saw</a></li>
+                  <li><a href="#" id="machinery-miter-saw">Miter Saw</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Working Process Item End -->
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <!-- Working Process Item Start -->
+            <div
+              class="working-process-item wow fadeInUp"
+              data-wow-delay="0.75s"
+            >
+              <div class="service-categories-list wow fadeInUp">
+                <ul id="machinery-list-3">
+                  <li>
+                    <a href="#" id="machinery-edge-bander-pvc"
+                      >Edge Bander-PVC</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="machinery-bench-grinder">Bench Grinder</a>
+                  </li>
+                  <li>
+                    <a href="#" id="machinery-spray-paint-booth"
+                      >Multi-Function Spray Paint Booth</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="machinery-hot-press-machine"
+                      >Hot Press Machine</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Working Process Item End -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container hse">
+      <div class="table-header" id="wood-machinery-list-title">
+        Wood Machinery List
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th id="wood-machinery-sl-no">Sl No</th>
+            <th id="wood-machinery-type">Machinery Type</th>
+            <th id="wood-machinery-brand">Brand</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td id="wood-machinery-panel-saw">Panel Saw</td>
+            <td id="wood-machinery-felder">Felder</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td id="wood-machinery-surface-planer">Wood Surface Planer</td>
+            <td id="wood-machinery-felder">Felder</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td id="wood-machinery-spindle-moulder">Spindle Moulder</td>
+            <td id="wood-machinery-compact">Compact</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td id="wood-machinery-thickness-planer">Thickness Planer</td>
+            <td id="wood-machinery-compact">Compact</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td id="wood-machinery-radial-arm-saw">Radial Arm Saw</td>
+            <td id="wood-machinery-makita">Makita</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td id="wood-machinery-band-saw">Band Saw</td>
+            <td id="wood-machinery-centuara">Centuara</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td id="wood-machinery-edge-bander-pvc">Edge Bander-PVC</td>
+            <td id="wood-machinery-tempora">Tempora</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td id="wood-machinery-edge-bander-wood">Edge Bander-Wood</td>
+            <td id="wood-machinery-fravol">Fravol</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td id="wood-machinery-bench-grinder">Bench Grinder</td>
+            <td id="wood-machinery-makita">Makita</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td id="wood-machinery-paint-booth">Paint Booth</td>
+            <td id="wood-machinery-firat">Firat</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td id="wood-machinery-hot-press">Hot & Cold Pressing Machine</td>
+            <td id="wood-machinery-steton">Steton</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td id="wood-machinery-sanding-machine">Sanding Machine</td>
+            <td id="wood-machinery-scm">SCM</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td id="wood-machinery-veneer-laser-cutting">
+              Multi-Function Spray Paint Booth
+            </td>
+            <td id="wood-machinery-compact">Compact</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td id="wood-machinery-veneer-stitching">Hot Press Machine</td>
+            <td id="wood-machinery-compact">Compact</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td id="wood-machinery-circular-saw">Circular Saw</td>
+            <td id="wood-machinery-felder">Felder</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br /><br /><br />
+    <!-- Cta Box Section End -->
+
+    <!-- Contact Us Section Start -->
+
+    <!-- Contact Us Section End -->
+
+    <!-- Footer Start -->
+    <!-- Footer Start -->
+    <footer class="main-footer" style="padding: 60px 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- About Footer Start -->
+          <div class="col-lg-4 col-md-12 mb-4 text-center">
+            <div class="about-footer">
+              <div class="footer-logo">
+                <figure>
+                  <img src="images/AGTC-Logo_Red-White.png" alt="" />
+                </figure>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Transforming Visions into Reality: Your Trusted Partner in
+                  Construction Excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- About Footer End -->
+
+          <!-- Footer Links Start -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4 text-center">
+            <div class="footer-links">
+              <h3>Company</h3>
+              <ul style="list-style: none; padding-left: 30px">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Links End -->
+
+          <!-- Footer Contact Info Box Start -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4 text-center">
+            <div class="footer-links footer-contact-box">
+              <h3 style="padding-left: 40px">Contact Us</h3>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/telephone.png" alt="" />
+                </div>
+                <p>(+974) 66554433</p>
+              </div>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/mail.png" alt="" />
+                </div>
+                <p>info@algharafacontracting.com</p>
+              </div>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/map.png" alt="" />
+                </div>
+                <p>1606, Palm Tower B, St. No. 810 Zone No. 60, Doha - Qatar</p>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Contact Info Box End -->
+        </div>
+
+        <!-- ISO Certifications Row Start -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="margin-top: 40px"
+        >
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 14001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">Environmental management<br />system</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 45001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">
+              Occupational Health and<br />safety management system
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 9001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">Quality<br />management system</p>
+          </div>
+        </div>
+        <!-- ISO Certifications Row End -->
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer-copyright" style="margin-top: 40px">
+          <div class="row align-items-center text-center">
+            <div class="col-lg-6 col-md-7 mb-3 mb-md-0">
+              <p>Copyright © 2024 AGTC. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="footer-social-links">
+                <ul
+                  style="
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                  "
+                >
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright Section End -->
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script>
+      const translations = {
+        en: {
+          logo: "Your Logo",
+          navHome: "Home",
+          navAbout: "About",
+          navChairmansMessage: "CHAIRMAN'S MESSAGE",
+          navHsePolicy: "HSE & QC POLICY",
+          navManagementStaff: "MANAGEMENT & STAFF",
+          navVehiclesEquipments: "VEHICLES & EQUIPMENTS",
+          navCertificate: "Certificate",
+          navDivisions: "Divisions",
+          navMep: "MEP",
+          navCarpentry: "CARPENTRY",
+          navProjects: "Projects",
+          navOngoingProjects: "Ongoing Projects",
+          navCompletedProjects: "Completed Projects",
+          navCareer: "Career",
+          navContact: "Contact",
+          navSelect: "Select",
+          navEnglish: "English",
+          navArabic: "Arabic",
+          services_title: "Our Services",
+          services_description:
+            "At Al Gharafa Carpentry Division, we pride ourselves on our extensive range of high-quality wooden products, crafted with precision and care. Explore our diverse offerings below:",
+
+          // Table Headers
+          table_sl_no: "Sl No",
+          table_services: "Services",
+
+          // Service Items
+          service_wooden_chairs: "Wooden Chairs",
+          service_kitchen_cabinet: "Kitchen Cabinet",
+          service_spindle_moulder: "Spindle Moulder",
+          service_flush_door: "Flush Door",
+          service_panel_door: "Panel Door",
+          service_decor_door: "Décor Door",
+          service_toilet_cubicles: "Toilet Cubicles",
+
+          // Section Title
+          plant_machineries_title: "Plant and Machineries",
+
+          // Service Content (if needed)
+          service_content: "Details about the plant and machineries.",
+
+          // Machinery Items
+          machinery_panel_saw: "Panel Saw Machines",
+          machinery_wood_surface_planer: "Wood Surface Planer",
+          machinery_spindle_moulder: "Spindle Moulder",
+          machinery_thickness_planer: "Thickness Planer",
+          machinery_radial_arm_saw: "Radial Arm Saw",
+          machinery_band_saw: "Band Saw",
+          machinery_miter_saw: "Miter Saw",
+          machinery_edge_bander_pvc: "Edge Bander-PVC",
+          machinery_bench_grinder: "Bench Grinder",
+          machinery_spray_paint_booth: "Multi-Function Spray Paint Booth",
+          machinery_hot_press_machine: "Hot Press Machine",
+          wood_machinery_list_title: "Wood Machinery List",
+          wood_machinery_sl_no: "Sl No",
+          wood_machinery_type: "Machinery Type",
+          wood_machinery_brand: "Brand",
+          wood_machinery_panel_saw: "Panel Saw",
+          wood_machinery_surface_planer: "Wood Surface Planer",
+          wood_machinery_spindle_moulder: "Spindle Moulder",
+          wood_machinery_thickness_planer: "Thickness Planer",
+          wood_machinery_radial_arm_saw: "Radial Arm Saw",
+          wood_machinery_band_saw: "Band Saw",
+          wood_machinery_edge_bander_pvc: "Edge Bander-PVC",
+          wood_machinery_edge_bander_wood: "Edge Bander-Wood",
+          wood_machinery_bench_grinder: "Bench Grinder",
+          wood_machinery_paint_booth: "Paint Booth",
+          wood_machinery_hot_press: "Hot & Cold Pressing Machine",
+          wood_machinery_sanding_machine: "Sanding Machine",
+          wood_machinery_veneer_laser_cutting:
+            " Multi-Function Spray Paint Booth",
+          wood_machinery_veneer_stitching: "Hot Press Machine",
+          wood_machinery_circular_saw: "Circular Saw",
+          page_header_title: "CARPENTRY DIVISION",
+        },
+        ar: {
+          logo: "شعارك",
+          navHome: "الرئيسية",
+          navAbout: "من نحن",
+          navChairmansMessage: "رسالة الرئيس",
+          navHsePolicy: "سياسة الصحة والسلامة",
+          navManagementStaff: "الإدارة والموظفين",
+          navVehiclesEquipments: "المركبات والمعدات",
+          navCertificate: "الشهادات",
+          navDivisions: "الأقسام",
+          navMep: "MEP",
+          navCarpentry: "النجارة",
+          navProjects: "المشاريع",
+          navOngoingProjects: "المشاريع الجارية",
+          navCompletedProjects: "المشاريع المنتهية",
+          navCareer: "وظائف",
+          navContact: "تواصل",
+          navSelect: "اختر",
+          navEnglish: "إنجليزي",
+          navArabic: "عربي",
+          services_title: "خدماتنا",
+          services_description:
+            "في قسم النجارة بالغرافة، نفخر بتقديم مجموعة واسعة من المنتجات الخشبية عالية الجودة المصنوعة بدقة وعناية. استكشف عروضنا المتنوعة أدناه:",
+
+          // Table Headers
+          table_sl_no: "الرقم التسلسلي",
+          table_services: "الخدمات",
+
+          // Service Items
+          service_wooden_chairs: "كراسي خشبية",
+          service_kitchen_cabinet: "خزانة المطبخ",
+          service_spindle_moulder: "خراطة أعمدة",
+          service_flush_door: " الابواب الملسا",
+          service_panel_door: "أبواب مشغولة",
+          service_decor_door: "ابواب مزخرفة",
+          service_toilet_cubicles: "مقصورات المراحيض",
+          plant_machineries_title: "المصنع والمكن",
+
+          // Service Content (if needed)
+          service_content: "تفاصيل حول المعدات والآلات.",
+
+          // Machinery Items
+          machinery_panel_saw: "منشار الالواح",
+          machinery_wood_surface_planer: "ماكينة تمليس الخشب",
+          machinery_spindle_moulder: " ماكينة خراطة الاعمدة",
+          machinery_thickness_planer: "مخرطة",
+          machinery_radial_arm_saw: " منشار زراع شعاعي",
+          machinery_band_saw: "منشار شريطي",
+          machinery_miter_saw: " منشار ميتر منزلق",
+          machinery_edge_bander_pvc: " ماكينة تلزيق الحواف ",
+          machinery_bench_grinder: "جريندر",
+          machinery_spray_paint_booth: "غرفة الطلاء متعددة الوظائف",
+          machinery_hot_press_machine: "ماكينة الضغط الساخن",
+          wood_machinery_list_title: "قائمة آلات الخشب",
+          wood_machinery_sl_no: "رقم التسلسل",
+          wood_machinery_type: "نوع الآلة",
+          wood_machinery_brand: "العلامة التجارية",
+          wood_machinery_panel_saw: "منشار لوح",
+          // wood_machinery_surface_planer: "آلة تسوية سطح الخشب",
+          wood_machinery_spindle_moulder: "آلة تشكيل المغزل",
+          wood_machinery_thickness_planer: " مخرطة",
+          wood_machinery_radial_arm_saw: " منشار زراع شعاعي ",
+          wood_machinery_band_saw: "منشار ميتر منزلق",
+          wood_machinery_edge_bander_pvc: "ماكينة تلزيق الحواف",
+          wood_machinery_edge_bander_wood: "آلة حافة الخشب",
+          wood_machinery_bench_grinder: " جريندر",
+          wood_machinery_paint_booth: "غرفة الطلاء",
+          wood_machinery_hot_press: "آلة الضغط الساخن والبارد",
+          wood_machinery_sanding_machine: "آلة صنفرة",
+          wood_machinery_veneer_laser_cutting:
+            " مكينة طلى بالرزاز متعددة الوظائف",
+          wood_machinery_veneer_stitching: "ماكينة الضغط الحراري",
+          wood_machinery_circular_saw: "منشار دائري",
+          page_header_title: "قسم النجارة",
+          wood_machinery_surface_planer: "ماكينة تمليس الخشب",
+        },
+      };
+
+      function translate(language) {
+        // Update menu items based on the selected language
+        document.getElementById("navHome").innerText =
+          translations[language].navHome;
+        document.getElementById("navAbout").innerText =
+          translations[language].navAbout;
+        document.getElementById("navChairmansMessage").innerText =
+          translations[language].navChairmansMessage;
+        document.getElementById("navHsePolicy").innerText =
+          translations[language].navHsePolicy;
+        document.getElementById("navManagementStaff").innerText =
+          translations[language].navManagementStaff;
+        document.getElementById("navVehiclesEquipments").innerText =
+          translations[language].navVehiclesEquipments;
+        document.getElementById("navCertificate").innerText =
+          translations[language].navCertificate;
+        document.getElementById("navDivisions").innerText =
+          translations[language].navDivisions;
+        document.getElementById("navMep").innerText =
+          translations[language].navMep;
+        document.getElementById("navCarpentry").innerText =
+          translations[language].navCarpentry;
+        document.getElementById("navProjects").innerText =
+          translations[language].navProjects;
+        document.getElementById("navOngoingProjects").innerText =
+          translations[language].navOngoingProjects;
+        document.getElementById("navCompletedProjects").innerText =
+          translations[language].navCompletedProjects;
+        document.getElementById("navCareer").innerText =
+          translations[language].navCareer;
+        document.getElementById("navContact").innerText =
+          translations[language].navContact;
+
+        // Section Title and Description
+        document.getElementById("services-title").innerText =
+          translations[language].services_title;
+        document.getElementById("services-description").innerText =
+          translations[language].services_description;
+
+        // Table Headers
+        document.getElementById("table-sl-no").innerText =
+          translations[language].table_sl_no;
+        document.getElementById("table-services").innerText =
+          translations[language].table_services;
+
+        // Service Items
+        document.getElementById("service-wooden-chairs").innerText =
+          translations[language].service_wooden_chairs;
+        document.getElementById("service-kitchen-cabinet").innerText =
+          translations[language].service_kitchen_cabinet;
+        document.getElementById("service-spindle-moulder").innerText =
+          translations[language].service_spindle_moulder;
+        document.getElementById("service-flush-door").innerText =
+          translations[language].service_flush_door;
+        document.getElementById("service-panel-door").innerText =
+          translations[language].service_panel_door;
+        document.getElementById("service-decor-door").innerText =
+          translations[language].service_decor_door;
+        document.getElementById("service-toilet-cubicles").innerText =
+          translations[language].service_toilet_cubicles;
+        document.getElementById("plant-machineries-title").innerText =
+          translations[language].plant_machineries_title;
+
+        // Translate service content if applicable
+        document.getElementById("service-content").innerText =
+          translations[language].service_content;
+
+        // Translate machinery items
+        document.getElementById("machinery-panel-saw").innerText =
+          translations[language].machinery_panel_saw;
+        document.getElementById("machinery-wood-surface-planer").innerText =
+          translations[language].machinery_wood_surface_planer;
+        document.getElementById("machinery-spindle-moulder").innerText =
+          translations[language].machinery_spindle_moulder;
+        document.getElementById("machinery-thickness-planer").innerText =
+          translations[language].machinery_thickness_planer;
+        document.getElementById("machinery-radial-arm-saw").innerText =
+          translations[language].machinery_radial_arm_saw;
+        document.getElementById("machinery-band-saw").innerText =
+          translations[language].machinery_band_saw;
+        document.getElementById("machinery-miter-saw").innerText =
+          translations[language].machinery_miter_saw;
+        document.getElementById("machinery-edge-bander-pvc").innerText =
+          translations[language].machinery_edge_bander_pvc;
+        document.getElementById("machinery-bench-grinder").innerText =
+          translations[language].machinery_bench_grinder;
+        document.getElementById("machinery-spray-paint-booth").innerText =
+          translations[language].machinery_spray_paint_booth;
+        document.getElementById("machinery-hot-press-machine").innerText =
+          translations[language].machinery_hot_press_machine;
+        document.getElementById("wood-machinery-list-title").innerText =
+          translations[language].wood_machinery_list_title;
+        document.getElementById("wood-machinery-sl-no").innerText =
+          translations[language].wood_machinery_sl_no;
+        document.getElementById("wood-machinery-type").innerText =
+          translations[language].wood_machinery_type;
+        document.getElementById("wood-machinery-brand").innerText =
+          translations[language].wood_machinery_brand;
+
+        // Machinery Items
+        document.getElementById("wood-machinery-panel-saw").innerText =
+          translations[language].wood_machinery_panel_saw;
+        document.getElementById("wood-machinery-surface-planer").innerText =
+          translations[language].wood_machinery_surface_planer;
+        document.getElementById("wood-machinery-spindle-moulder").innerText =
+          translations[language].wood_machinery_spindle_moulder;
+        document.getElementById("wood-machinery-thickness-planer").innerText =
+          translations[language].wood_machinery_thickness_planer;
+        document.getElementById("wood-machinery-radial-arm-saw").innerText =
+          translations[language].wood_machinery_radial_arm_saw;
+        document.getElementById("wood-machinery-band-saw").innerText =
+          translations[language].wood_machinery_band_saw;
+        document.getElementById("wood-machinery-edge-bander-pvc").innerText =
+          translations[language].wood_machinery_edge_bander_pvc;
+        document.getElementById("wood-machinery-edge-bander-wood").innerText =
+          translations[language].wood_machinery_edge_bander_wood;
+        document.getElementById("wood-machinery-bench-grinder").innerText =
+          translations[language].wood_machinery_bench_grinder;
+        document.getElementById("wood-machinery-paint-booth").innerText =
+          translations[language].wood_machinery_paint_booth;
+        document.getElementById("wood-machinery-hot-press").innerText =
+          translations[language].wood_machinery_hot_press;
+        document.getElementById("wood-machinery-sanding-machine").innerText =
+          translations[language].wood_machinery_sanding_machine;
+        document.getElementById(
+          "wood-machinery-veneer-laser-cutting"
+        ).innerText =
+          translations[language].wood_machinery_veneer_laser_cutting;
+        document.getElementById("wood-machinery-veneer-stitching").innerText =
+          translations[language].wood_machinery_veneer_stitching;
+        document.getElementById("wood-machinery-circular-saw").innerText =
+          translations[language].wood_machinery_circular_saw;
+        document.getElementById("page-header-title").innerText =
+          translations[language].page_header_title;
+      }
+    </script>
+
+    <!-- Google Translate API -->
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script src="../../assets/js/theme-panel.js"></script>
+  </body>
+
+  <!-- Mirrored from demo.awaikenthemes.com/html-preview/builtup/service-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 07:34:25 GMT -->
+</html>

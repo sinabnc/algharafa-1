@@ -1,0 +1,4 @@
+<!-- In the head section, after bootstrap.min.css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="css/language.css">
+<link rel="stylesheet" href="css/navbar.css"> 

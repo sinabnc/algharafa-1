@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Page Title -->
+    <title>AGTc</title>
+    <!-- Favicon Icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="favicon/android-chrome-192x192.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Css -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/language.css" />
+
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <link href="css/navbar.css" rel="stylesheet" media="screen" />
+    <link href="css/home.css" rel="stylesheet" media="screen" />
+  </head>
+  <style>
+    .service-body-title h3 {
+      text-align: center;
+      /* Center the text horizontally */
+      margin: 0 auto;
+      /* Ensure there’s no margin that might affect alignment */
+      display: block;
+      /* Ensure the element is block-level for proper centering */
+      font-weight: bold;
+      /* Optional: Make the text bold */
+      margin-bottom: 200px;
+    }
+
+    #secondary-logo {
+      /* margin-top: 10px; */
+      width: 200px;
+      /* margin-right: 10px; */
+    }
+
+    .our-ser {
+      color: #12223b;
+    }
+
+    /* Remove Google Translate icon */
+    .goog-te-gadget-icon {
+      display: none !important;
+    }
+
+    /* Style the text inside the button */
+    .goog-te-gadget-simple span {
+      color: #fff !important;
+      /* Ensure text inside the button is white */
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      /* Centers horizontally */
+      align-items: center;
+      /* Centers vertically */
+      height: 75px;
+      /* Set a height for the container */
+    }
+
+    .image-container img {
+      max-width: 100%;
+      /* Optional: Limits the image width */
+      height: 100px;
+      padding-bottom: 30px;
+      /* Maintains the image aspect ratio */
+    }
+
+    @media (max-width: 768px) {
+      /* Ensure both logos resize on mobile */
+      .first-logo {
+        max-height: 40px;
+      }
+
+      #second-logo {
+        max-height: 50px !important;
+        max-width: 150px !important;
+        /* top: 1px !important; */
+        margin-top: 10px !important;
+        left: 35% !important;
+        transform: translateX(-35%) !important;
+      }
+
+      /* Adjust navbar padding for mobile */
+      .navbar {
+        padding: 10px 15px;
+      }
+
+      /* Adjust submenu items for mobile */
+      .navbar-nav .dropdown-menu {
+        width: 100%;
+        /* Full width on mobile */
+        padding: 10px;
+      }
+
+      /* Align the language selector for mobile */
+      .language-selector {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      /* Adjust spacing for mobile view */
+      .nav-item {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    /* Additional adjustments for very small screens */
+    @media (max-width: 576px) {
+      #menu li {
+        text-align: center;
+        /* Center-align menu items for better readability */
+      }
+    }
+  </style>
+
+  <body>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <img src="images/726.gif" alt="" />
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar-container navbar-expand-lg">
+          <!-- Logo Start -->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <!-- First Logo -->
+            <img id="image-logos" src="images/logo-white.png" alt="Logo" />
+          </a>
+          <!-- Logo End -->
+
+          <!-- Toggle Button for Mobile -->
+
+          <!-- Main Menu Start -->
+          <div class="collapse navbar-collapse main-menu" id="navbarMenu">
+            <div class="nav-menu-wrapper">
+              <ul class="navbar-nav mr-auto" id="menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html" id="navHome">Home</a>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="about.html" id="navAbout">About</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="about.html"
+                        id="navChairmansMessage"
+                        >CHAIRMAN'S MESSAGE</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="about-hse.html"
+                        id="navHsePolicy"
+                        >HSE & QC POLICY</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="staff.html"
+                        id="navManagementStaff"
+                        >MANAGEMENT & STAFF</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="vahcle.html"
+                        id="navVehiclesEquipments"
+                        >VEHICLES & EQUIPMENTS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="certificate.html"
+                    id="navCertificate"
+                    >certificate</a
+                  >
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="mep.html" id="navDivisions"
+                    >Divisions</a
+                  >
+                  <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mep.html" id="navMep">MEP</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="carpentry.html"
+                        id="navCarpentry"
+                        >CARPENTRY
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item submenu">
+                  <a class="nav-link" href="#" id="navProjects">Projects</a>
+                  <ul>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="project-on.html"
+                        id="navOngoingProjects"
+                        >ongoing projects</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="project.html"
+                        id="navCompletedProjects"
+                        >completed projects</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html" id="navCareer"
+                    >career</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="navContact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Language Selector (Aligned to the right) -->
+          </div>
+          <div class="navbar-end">
+            <button
+              id="language-button "
+              onclick="changeLanguage()"
+              class="language-select-ghost-button desktop"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                ></path>
+              </svg>
+              <span id="currentLanguage">English</span>
+            </button>
+
+            <div class="sidebar-toggler" onclick="toggleSidebar()">☰</div>
+          </div>
+
+          <div id="mySidebar" class="sidebar">
+            <a
+              href="javascript:void(0)"
+              class="closebtn"
+              onclick="closeSidebar()"
+              >×</a
+            >
+            <div>
+              <a href="index.html" id="navHome">Home</a>
+              <a class="dropdown-btn">About</a>
+              <div class="dropdown-container">
+                <a href="about.html" id="navChairmansMessage"
+                  >CHAIRMAN'S MESSAGE</a
+                >
+                <a href="about-hse.html" id="navHsePolicy">HSE & QC POLICY</a>
+                <a href="staff.html" id="navManagementStaff"
+                  >MANAGEMENT & STAFF</a
+                >
+                <a href="vahcle.html" id="navVehiclesEquipments"
+                  >VEHICLES & EQUIPMENTS</a
+                >
+              </div>
+              <a class="dropdown-btn">Projects</a>
+              <div class="dropdown-container">
+                <a href="project-on.html" id="navOngoingProjects"
+                  >Ongoing Projects</a
+                >
+                <a href="project.html" id="navCompletedProjects"
+                  >Completed Projects</a
+                >
+              </div>
+              <a href="certificate.html" id="navCertificate">Certificate</a>
+              <a class="dropdown-btn">Divisions</a>
+              <div class="dropdown-container">
+                <a href="mep.html" id="navMep">MEP</a>
+                <a href="carpentry.html" id="navCarpentry">Carpentry</a>
+              </div>
+              <a href="career.html" id="navCareer">Career</a>
+              <a href="contact.html" id="navContact">Contact</a>
+            </div>
+
+            <!-- Language Selector -->
+            <button
+              id="language-button"
+              onclick="changeLanguage()"
+              class="language-select-ghost-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                ></path>
+              </svg>
+              <span id="currentLanguage-mobile">English</span>
+            </button>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero bg-section hero-slider" id="banner">
+      <div class="hero-slider-layout">
+        <div class="swiper h-100dvh">
+          <div class="swiper-wrapper">
+            <!-- Hero Slide Start -->
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="overlay"></div>
+                <!-- Slider Image Start -->
+                <div class="hero-slider-image">
+                  <img src="images/home 3-min.jpeg" alt="" />
+                </div>
+                <!-- Slider Image End -->
+
+                <!-- Slider Content Start -->
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-lg-12">
+                      <!-- Hero Content Start -->
+                      <div class="hero-content">
+                        <div class="section-title">
+                          <h3 id="heroTitle1" class="wow fadeInUp">
+                            Welcome to AGTC
+                          </h3>
+                          <h1
+                            id="heroHeading1"
+                            class="text-anime-style-3"
+                            data-cursor="-opaque"
+                          >
+                            Transforming Visions Into Reality
+                          </h1>
+                          <p
+                            id="heroDescription1"
+                            class="wow fadeInUp"
+                            data-wow-delay="0.25s"
+                          >
+                            We specialize in turning visions into reality with
+                            exceptional craftsmanship and meticulous attention
+                            to detail. With years of experience and a commitment
+                            to quality.
+                          </p>
+                        </div>
+
+                        <div
+                          class="hero-content-body wow fadeInUp"
+                          data-wow-delay="0.5s"
+                        >
+                          <a href="#" id="heroButton1" class="btn-default"
+                            >Get Started</a
+                          >
+                          <a
+                            href="project.html"
+                            id="heroButton2"
+                            class="btn-default btn-highlighted"
+                            >View Projects</a
+                          >
+                        </div>
+                      </div>
+                      <!-- Hero Content End -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider Content End -->
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="overlay"></div>
+                <div class="hero-slider-image">
+                  <img src="images/HOMMEEE 22-min.jpeg" alt="" />
+                </div>
+
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-lg-12">
+                      <div class="hero-content">
+                        <div class="section-title">
+                          <h3 id="heroTitle2" class="wow fadeInUp">
+                            Welcome to AGTC
+                          </h3>
+                          <h1
+                            id="heroHeading2"
+                            class="text-anime-style-3"
+                            data-cursor="-opaque"
+                          >
+                            Transforming Visions Into Reality
+                          </h1>
+                          <p
+                            id="heroDescription2"
+                            class="wow fadeInUp"
+                            data-wow-delay="0.25s"
+                          >
+                            We specialize in turning visions into reality with
+                            exceptional craftsmanship and meticulous attention
+                            to detail. With years of experience and a commitment
+                            to quality.
+                          </p>
+                        </div>
+
+                        <div
+                          class="hero-content-body wow fadeInUp"
+                          data-wow-delay="0.5s"
+                        >
+                          <a
+                            href="contact.html"
+                            id="heroButton3"
+                            class="btn-default"
+                            >Contact Us</a
+                          >
+                          <a
+                            href="#"
+                            id="heroButton4"
+                            class="btn-default btn-highlighted"
+                            >View Projects</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hero Slide End -->
+
+            <!-- Hero Slide Start -->
+
+            <!-- Hero Slide End -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+
+    <div class="about-us">
+      <!-- <canvas></canvas> -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <!-- About Us Image Start -->
+            <div class="about-image">
+              <div class="about-img">
+                <figure class="reveal">
+                  <img
+                    src="images/home_web-min[1].jpeg"
+                    alt=""
+                    id="aboutUsImage"
+                  />
+                </figure>
+              </div>
+            </div>
+            <!-- About Us Image End  -->
+          </div>
+
+          <div class="col-lg-7">
+            <!-- About Content Start -->
+            <div class="about-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 id="aboutUsTitle" class="wow fadeInUp">about us</h3>
+                <h2
+                  id="aboutUsHeading"
+                  class="text-anime-style-3"
+                  data-cursor="-opaque"
+                >
+                  Crafting structures that last a life time
+                </h2>
+                <p
+                  id="aboutUsDescription"
+                  class="wow fadeInUp"
+                  data-wow-delay="0.25s"
+                >
+                  Al Gharafa Trading and Contracting Co. W.L.L (AGTC) is 100%
+                  Qatari national company owned by Mr. Sheikh Essa Bin Hamad Bin
+                  Jassim Bin Thani Al Thani and registered in Doha, The
+                  establishment of AGTC since 2007 is a natural progression of
+                  the Essa Bin Hamad Company (EBH Co.) policy of controlled
+                  growth and diversification.
+                </p>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- About Content Body Start -->
+              <div
+                class="about-content-body wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <ul>
+                  <li id="aboutUsService1">Comprehensive Services</li>
+                  <li id="aboutUsService2">Advanced Technology</li>
+                  <li id="aboutUsService3">Transparent Communication</li>
+                </ul>
+              </div>
+              <!-- About Content Body End -->
+
+              <!-- About Content Footer Start -->
+              <div
+                class="about-content-footer wow fadeInUp"
+                data-wow-delay="0.75s"
+              >
+                <div class="about-footer-btn">
+                  <a
+                    href="images/AGTC BROCHURE A4 LANDSCAPE.pdf"
+                    download
+                    class="btn-default pdf"
+                    id="downloadBrochure"
+                    >Download brochure</a
+                  >
+                </div>
+
+                <div class="about-contact-support">
+                  <div class="icon-box">
+                    <img src="images/telephone.png" alt="" id="contactIcon" />
+                  </div>
+                  <div class="about-support-content">
+                    <p id="supportText">call support center 24X7</p>
+                    <h3 id="supportNumber">(+974)66554433</h3>
+                  </div>
+                </div>
+              </div>
+              <!-- About Content Footer End -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Our Service Section Start -->
+    <div class="content--canvas" id="canvas-container"></div>
+
+    <div class="our-service">
+      <div class="light-bg-section">
+        <div class="container-fluid">
+          <div class="row section-row">
+            <div class="col-lg-12">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 id="servicesSectionTitle" class="wow fadeInUp">
+                  our services
+                </h3>
+                <h2
+                  id="servicesHeading"
+                  class="text-anime-style-3 our-ser"
+                  data-cursor="-opaque"
+                >
+                  Our construction services
+                </h2>
+              </div>
+              <!-- Section Title End -->
+            </div>
+          </div>
+
+          <div class="row" style="padding: 16px">
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/CIVIL.jpeg" alt="Civil Department" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceCivilTitle">Civil Department</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/ARCH.jpeg" alt="Architecture Design" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceArchTitle">architecture design</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="images/ELECTR.jpeg"
+                        alt="Electrical Department"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceElectrTitle">Electrical Department</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/MECH.jpeg" alt="Mechanical Department" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceMechTitle">Mechanical Department</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="images/DESIGN TEEAM.jpeg"
+                        alt="Design & Project"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceDesignTitle">Design & project</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="images/PURCH.jpeg"
+                        alt="Purchasing Department"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="servicePurchTitle">Purchasing Department</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/LOGIS.jpeg" alt="Logistics Department" />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceLogisTitle">Logistics Department</h3>
+                  </div>
+                  <!-- Service Body Title End -->
+
+                  <!-- Service Content Start -->
+                  <!-- Service Content End -->
+                </div>
+                <!-- Service Body End -->
+              </div>
+              <!-- Service Item End -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- Service Item Start -->
+              <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                <!-- Service Image Start -->
+                <div class="service-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="images/PROJECT MANG.jpeg"
+                        alt="Projects Management"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <!-- Service Image End -->
+
+                <!-- Service Body Start -->
+                <div class="service-body">
+                  <!-- Service Body Title Start -->
+                  <div class="service-body-title">
+                    <h3 id="serviceProjMngTitle">Projects Management</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Service Section End -->
+
+    <div class="why-choose-us">
+      <div class="container">
+        <div class="row section-row">
+          <div class="col-lg-12">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <h3 id="whyChooseUsTitle" class="wow fadeInUp">why choose us?</h3>
+              <h2
+                id="whyChooseUsHeading"
+                class="text-anime-style-3"
+                data-cursor="-opaque"
+              >
+                Why we're your best choice
+              </h2>
+              <p
+                id="whyChooseUsDescription"
+                class="wow fadeInUp"
+                data-wow-delay="0.25s"
+              >
+                By assembling the experienced construction management
+                organization and utilizing the numerous construction equipment’s
+                and fabrication resources companies across Qatar, AGTC will be
+                able to provide a more efficient and cost-effective service to
+                our clients, especially in residential, commercial, industrial,
+                infrastructural, sports facilities and landscaping construction
+                works.
+              </p>
+            </div>
+            <!-- Section Title End -->
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Why Choose Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+              <div class="icon-box">
+                <img src="images/light-bulb.png" alt="" />
+              </div>
+              <div class="why-choose-content">
+                <h3 id="whyChooseObjectivesTitle">Our Objectives</h3>
+                <p id="whyChooseObjectivesDescription">
+                  The objectives of AGTC is to undertake all aspects of
+                  engineering and construction activities related to civil,
+                  mechanical, electrical, plus engineering procurements, testing
+                  and commissioning and startup services.
+                </p>
+              </div>
+              <div class="why-choose-counter">
+                <h3><span class="counter">250</span>+</h3>
+                <p id="whyChooseCompletedProjects">project completed</p>
+              </div>
+            </div>
+          </div>
+          <!-- Why Choose Item End -->
+
+          <!-- Why Choose Image Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="why-choose-image">
+              <figure class="image-anime reveal">
+                <img src="images/aa.jpeg" alt="" />
+              </figure>
+            </div>
+          </div>
+          <!-- Why Choose Image End -->
+
+          <!-- Why Choose Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+              <div class="icon-box">
+                <img src="images/questions.png" alt="" />
+              </div>
+              <div class="why-choose-content">
+                <h3 id="whyChooseStrengthsTitle">Our Strengths</h3>
+                <p id="whyChooseStrengthsDescription">
+                  The strength of AGTC lies in its access to the vast reserves
+                  and resources of the companies across Qatar. Which owns a vast
+                  fleet of construction and earth moving equipment’s in the
+                  region. On the other hand, AGTC has a vast pool of skilled
+                  manpower and team of professional managers / engineers and
+                  experienced supervisory personnel.
+                </p>
+              </div>
+              <div class="why-choose-counter">
+                <h3><span class="counter">250</span>+</h3>
+                <p id="whyChooseCompletedProjects2">project completed</p>
+              </div>
+            </div>
+          </div>
+          <!-- Why Choose Item End -->
+
+          <!-- Why Choose Image Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="why-choose-image">
+              <figure class="image-anime reveal">
+                <img src="images/Photos-8.jpg" alt="" />
+              </figure>
+            </div>
+          </div>
+          <!-- Why Choose Image End -->
+
+          <!-- Why Choose Item Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+              <div class="icon-box">
+                <img src="images/questions.png" alt="" />
+              </div>
+              <div class="why-choose-content">
+                <h3 id="whyChoosePhilosophyTitle">the philosophy</h3>
+                <p id="whyChoosePhilosophyDescription">
+                  The philosophy of AGTC is Quality, Reliability and Expertise
+                  in Services. The Management and Manpower team are committed to
+                  implement this philosophy on day to works.
+                </p>
+              </div>
+              <div class="why-choose-counter">
+                <h3><span class="counter">250</span>+</h3>
+                <p id="whyChooseCompletedProjects3">project completed</p>
+              </div>
+            </div>
+          </div>
+          <!-- Why Choose Item End -->
+
+          <!-- Why Choose Image Start -->
+          <div class="col-lg-4 col-md-6">
+            <div class="why-choose-image">
+              <figure class="image-anime reveal">
+                <img src="images/bbb.jpeg" alt="" />
+              </figure>
+            </div>
+          </div>
+          <!-- Why Choose Image End -->
+        </div>
+      </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Our Projects Section Start -->
+    <div class="background"></div>
+
+    <div class="our-projects">
+      <div class="light-bg-section">
+        <div class="container-fluid">
+          <div class="row section-row">
+            <div class="col-lg-12">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 id="ourProjectsTitle" class="wow fadeInUp">our projects</h3>
+                <h2
+                  id="ourProjectsHeading"
+                  class="text-anime-style-3"
+                  data-cursor="-opaque"
+                >
+                  Explore our diverse range of projects
+                </h2>
+                <p
+                  id="ourProjectsDescription"
+                  class="wow fadeInUp"
+                  data-wow-delay="0.25s"
+                >
+                  We specialize in a wide range of construction services,
+                  including residential, commercial, and industrial projects.
+                </p>
+              </div>
+              <!-- Section Title End -->
+            </div>
+          </div>
+
+          <div class="row" style="padding-left: 18px; padding-right: 16px">
+            <!-- Project Item Start -->
+            <div class="col-lg-3 col-md-6">
+              <div class="project-item wow fadeInUp" data-wow-delay="0.25s">
+                <div class="project-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/main-P002 (1).jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <div class="project-body-title">
+                    <h3 id="project1Title">Villa (G+1+PH) & Out Block</h3>
+                  </div>
+                  <div class="project-content">
+                    <p id="project1Description">
+                      A Villa comprising of Out Kitchen and Guard Rooms for our
+                      prestigious client, with a built-up area of 468.00 m²
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project Item End -->
+
+            <!-- Project Item Start -->
+            <div class="col-lg-3 col-md-6">
+              <div class="project-item wow fadeInUp" data-wow-delay="0.5s">
+                <div class="project-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/main-P009 (1).jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <div class="project-body-title">
+                    <h3 id="project2Title">Doha Bonyan Office</h3>
+                  </div>
+                  <div class="project-content">
+                    <p id="project2Description">
+                      ID / Fitout Works of an Office Space for Bonyan Al Doha
+                      Real Estate Company, with a Built-Up area of 530 m²
+                      including furniture's.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project Item End -->
+
+            <!-- Project Item Start -->
+            <div class="col-lg-3 col-md-6">
+              <div class="project-item wow fadeInUp" data-wow-delay="0.75s">
+                <div class="project-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/main.jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <div class="project-body-title">
+                    <h3 id="project3Title">6 Villa (G+1+PH) & Ancillary</h3>
+                  </div>
+                  <div class="project-content">
+                    <p id="project3Description">
+                      A Compound Villa comprising of 6 Villas, With a built-up
+                      area of 4,780 m² will cater to the ever-increasing need of
+                      housing services at Izghawa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project Item End -->
+
+            <!-- Project Item Start -->
+            <div class="col-lg-3 col-md-6">
+              <div class="project-item wow fadeInUp" data-wow-delay="1s">
+                <div class="project-image" data-cursor-text="View">
+                  <a href="#">
+                    <figure>
+                      <img src="images/main-1.jpg" alt="" />
+                    </figure>
+                  </a>
+                </div>
+                <div class="project-body">
+                  <div class="project-body-title">
+                    <h3 id="project4Title">50 Villas(G+1+PH)</h3>
+                  </div>
+                  <div class="project-content">
+                    <p id="project4Description">
+                      A Compound villas comprising of 50 Villas, Clubhouse,
+                      Swimming Pool, Substation and Guard Rooms for our
+                      prestigious tenant “Iskan”. With a built-up area of
+                      13,439.90 m² will cater to the ever-increasing need of
+                      housing services for government employees.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project Item End -->
+
+            <!-- Services Footer Btn Start -->
+            <div class="project-footer-btn wow fadeInUp" data-wow-delay="1.25s">
+              <a id="viewAllProjectsBtn" href="project.html" class="btn-default"
+                >view all projects</a
+              >
+            </div>
+            <!-- Services Footer Btn End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Projects Section End -->
+
+    <!-- Cta Box Section Start -->
+    <div
+      class="cta-box"
+      style="display: flex; align-items: center; justify-content: center"
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-7 col-md-8">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <h2
+                id="ctaBoxTitle"
+                class="text-anime-style-3"
+                data-cursor="-opaque"
+              >
+                Let's build something great together!
+              </h2>
+              <p id="ctaBoxDescription" class="wow fadeInUp">
+                Don't wait any longer to bring your construction dreams to life.
+                Partner with ATGC and experience unparalleled service and
+                quality.
+              </p>
+            </div>
+            <!-- Section Title End -->
+            <!-- Section Btn Start -->
+            <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
+              <a
+                id="ctaBoxBtn"
+                href="contact.html"
+                class="ctaBoxBtn btn-large"
+                style="padding-left: 70px"
+                >Contact</a
+              >
+            </div>
+            <!-- Section Btn End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cta Box Section End -->
+    <!-- Cta Box Section End -->
+
+    <!-- Our Testiminial Start -->
+
+    <!-- Our Testiminial End -->
+
+    <!-- Our FAQs Section Start -->
+
+    <!-- Footer Start -->
+    <footer class="main-footer" style="padding: 60px 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- About Footer Start -->
+          <div class="col-lg-4 col-md-12 mb-4 text-center">
+            <div class="about-footer">
+              <div class="footer-logo">
+                <figure>
+                  <img src="images/AGTC-Logo_Red-White.png" alt="" />
+                </figure>
+              </div>
+              <div class="footer-content">
+                <p>
+                  Transforming Visions into Reality: Your Trusted Partner in
+                  Construction Excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- About Footer End -->
+
+          <!-- Footer Links Start -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4 text-center">
+            <div class="footer-links">
+              <h3>Company</h3>
+              <ul style="list-style: none; padding-left: 30px">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Links End -->
+
+          <!-- Footer Contact Info Box Start -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4 text-center">
+            <div class="footer-links footer-contact-box">
+              <h3 style="padding-left: 40px">Contact Us</h3>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/telephone.png" alt="" />
+                </div>
+                <p>(+974) 66554433</p>
+              </div>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/mail.png" alt="" />
+                </div>
+                <p>info@algharafacontracting.com</p>
+              </div>
+              <div class="footer-info-box">
+                <div class="icon-box">
+                  <img src="images/map.png" alt="" />
+                </div>
+                <p>1606, Palm Tower B, St. No. 810 Zone No. 60, Doha - Qatar</p>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Contact Info Box End -->
+        </div>
+
+        <!-- ISO Certifications Row Start -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="margin-top: 40px"
+        >
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 14001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">Environmental management<br />system</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 45001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">
+              Occupational Health and<br />safety management system
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h6 style="color: #c00">ISO 9001 CERTIFIED COMPANY</h6>
+            <img
+              src="images/kvqa.jpg"
+              alt="ISO Certification"
+              style="width: 70px"
+            />
+            <img
+              src="images/iso-logo-removebg-preview.png"
+              alt="ISO Certification"
+              style="width: 150px"
+            />
+            <img
+              src="images/IAF-logo.png"
+              alt="ISO Certification"
+              style="width: 90px"
+            />
+            <p style="color: #000">Quality<br />management system</p>
+          </div>
+        </div>
+        <!-- ISO Certifications Row End -->
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer-copyright" style="margin-top: 40px">
+          <div class="row align-items-center text-center">
+            <div class="col-lg-6 col-md-7 mb-3 mb-md-0">
+              <p>Copyright © 2024 AGTC. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <div class="footer-social-links">
+                <ul
+                  style="
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                  "
+                >
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright Section End -->
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      // Initialize Swiper
+      // const swiper = new Swiper('.swiper', {
+      //     loop: true,
+      //     pagination: {
+      //         el: '.swiper-pagination',
+      //         clickable: true,
+      //     },
+      //     autoplay: {
+      //         delay: 5000,
+      //     },
+      // });
+
+      // Define translations for the entire page
+      function translate(language) {
+        const translations = {
+          en: {
+            // Hero Slider
+            heroTitle1: "Welcome to AGTC",
+            heroHeading1: "Transforming Visions Into Reality",
+            heroDescription1:
+              "We specialize in turning visions into reality with exceptional craftsmanship and meticulous attention to detail. With years of experience and a commitment to quality.",
+            heroButton1: "Get Started",
+            heroButton2: "View Projects",
+            heroTitle2: "Welcome to AGTC",
+            heroHeading2: "Transforming Visions Into Reality",
+            heroDescription2:
+              "We specialize in turning visions into reality with exceptional craftsmanship and meticulous attention to detail. With years of experience and a commitment to quality.",
+            heroButton3: "Get Started",
+            heroButton4: "View Projects",
+
+            // Main Menu
+            navHome: "Home",
+            navAbout: "About",
+            navChairmansMessage: "CHAIRMAN'S MESSAGE",
+            navHsePolicy: "HSE & QC POLICY",
+            navManagementStaff: "MANAGEMENT & STAFF",
+            navVehiclesEquipments: "VEHICLES & EQUIPMENTS",
+            navMep: "MEP",
+            navCarpentry: "CARPENTRY DIVISION",
+            navDiv: "Divisions",
+            navCertificate: "certificate",
+            navProjects: "Projects",
+            navOngoingProjects: "ongoing projects",
+            navCompletedProjects: "completed projects",
+            navCareer: "career",
+            navContact: "Contact",
+            aboutUsTitle: "about",
+            navDiv: "Divisions",
+            aboutUsHeading: "Crafting structures that last a lifetime",
+            aboutUsDescription:
+              "Al Gharafa Trading and Contracting Co. W.L.L (AGTC) is 100% Qatari national company owned by Mr. Sheikh Essa Bin Hamad Bin Jassim Bin Thani Al Thani and registered in Doha. The establishment of AGTC since 2007 is a natural progression of the Essa Bin Hamad Company (EBH Co.) policy of controlled growth and diversification.",
+            aboutUsService1: "Comprehensive Services",
+            aboutUsService2: "Advanced Technology",
+            aboutUsService3: "Transparent Communication",
+            downloadBrochure: "Download brochure",
+            supportText: "call support center 24X7",
+            supportNumber: "(+974)66554433",
+            servicesSectionTitle: "our services",
+            servicesHeading: "Our construction services",
+            serviceCivilTitle: "Civil Department",
+            serviceArchTitle: "architecture design",
+            serviceElectrTitle: "Electrical Department",
+            serviceMechTitle: "Mechanical Department",
+            serviceDesignTitle: "Design & project",
+            servicePurchTitle: "Purchasing Department",
+            serviceLogisTitle: "Logistics Department",
+            serviceProjMngTitle: "Projects Management",
+            whyChooseUsTitle: "why choose us?",
+            whyChooseUsHeading: "Why we're your best choice",
+            whyChooseUsDescription:
+              "By assembling the experienced construction management organization and utilizing the numerous construction equipment's and fabrication resources companies across Qatar, AGTC will be able to provide a more efficient and cost-effective service to our clients, especially in residential, commercial, industrial, infrastructural, sports facilities and landscaping construction works.",
+            whyChooseObjectivesTitle: "Our Objectives",
+            whyChooseObjectivesDescription:
+              "The objectives of AGTC is to undertake all aspects of engineering and construction activities related to civil, mechanical, electrical, plus engineering procurements, testing and commissioning and startup services.",
+            whyChooseCompletedProjects: "project completed",
+            whyChooseCompletedProjects2: "project completed",
+            whyChooseCompletedProjects3: "project completed",
+
+            whyChooseStrengthsTitle: "Our Strengths",
+            whyChooseStrengthsDescription:
+              "The strength of AGTC lies in its access to the vast reserves and resources of the companies across Qatar. Which owns a vast fleet of construction and earth moving equipment's in the region. On the other hand, AGTC has a vast pool of skilled manpower and team of professional managers / engineers and experienced supervisory personnel.",
+            whyChoosePhilosophyTitle: "the philosophy",
+            whyChoosePhilosophyDescription:
+              "The philosophy of AGTC is Quality, Reliability and Expertise in Services. The Management and Manpower team are committed to implement this philosophy on day to works.",
+            ourProjectsTitle: "our projects",
+            ourProjectsHeading: "Explore our diverse range of projects",
+            ourProjectsDescription:
+              "We specialize in a wide range of construction services, including residential, commercial, and industrial projects.",
+            project1Title: "B+G+7 Residential Complex",
+            project1Description:
+              "A Residential Complex comprising of 35 Flats, With a built-up area of 4,531.10 m² will cater to the ever-increasing need of housing services at Umm Ghuwailina.",
+            project2Title: "4 Villas (G+F+PH)",
+            project2Description:
+              "A Compound Villa comprising of 4 Villas, With a built-up area of 4,720 m² will cater to the ever-increasing need of housing services at Izghawa.",
+            project3Title: "6 Villa (G+1+PH) & Ancillary",
+            project3Description:
+              "A Compound Villa comprising of 6 Villas, With a built-up area of 4,780 m² will cater to the ever-increasing need of housing services at Izghawa.",
+            project4Title: "50 Villas(G+1+PH)",
+            project4Description:
+              "A Compound villas comprising of 50 Villas, Clubhouse, Swimming Pool, Substation and Guard Rooms for our prestigious tenant “Iskan”. With a built-up area of 13,439.90 m² will cater to the ever-increasing need of housing services for government employees.",
+            viewAllProjectsBtn: "view all projects",
+            ctaBoxTitle: "Let's build something great together!",
+            ctaBoxDescription:
+              "Don't wait any longer to bring your construction dreams to life. Partner with ATGC and experience unparalleled service and quality.",
+            ctaBoxBtn: "contact",
+          },
+          ar: {
+            // Hero Slider
+            heroTitle1: "مرحبا بكم في الغرافة للتجارة والمقاولات",
+            heroHeading1: "تحويل الرؤى إلى واقع",
+            heroDescription1:
+              "نحن متخصصون في تحويل الرؤى إلى واقع مع حرفية استثنائية واهتمام دقيق بالتفاصيل. وسنوات من الخبرة واهتمام بالجودة",
+            heroButton1: "ابدأ الآن",
+            heroButton2: "عرض المشاريع",
+            heroTitle2: "مرحبا بكم في الغرافة للتجارة والمقاولات",
+            heroHeading2: "تحويل الرؤى إلى واقع",
+            heroDescription2:
+              "نحن متخصصون في تحويل الرؤى إلى واقع مع حرفية استثنائية واهتمام دقيق بالتفاصيل. وسنوات من الخبرة واهتمام بالجودة",
+            heroButton3: "ابدأ الآن",
+            heroButton4: "عرض المشاريع",
+            // Main Menu
+            navHome: "الرئيسية",
+            navAbout: "من نحن ",
+            navChairmansMessage: "رسالة رئيس مجلس الإدارة",
+            navDiv: "الاقسام",
+            navHsePolicy: "سياسة الصحة والسلامة والبيئة",
+            navManagementStaff: "الإدارة والموظفين",
+            navVehiclesEquipments: "المركبات والمعدات",
+            navMep: "MEP",
+            navCarpentry: "قسم النجارة",
+            navCertificate: "الشهادات",
+            navProjects: "المشاريع",
+            navOngoingProjects: "المشاريع الجارية",
+            navCompletedProjects: "المشاريع المكتملة",
+            navCareer: "الوظائف",
+            navContact: "اتصل بنا",
+            aboutUsTitle: "من نحن",
+            navDiv: "الاقسام",
+            aboutUsHeading: " تبني مفهوم الاستدامة",
+            aboutUsDescription:
+              "شركة الغرافة للتجارة والمقاولات ذ.م.م. واحدة من الشركات القطرية الوطنية الرائدة، مملوكة بالكامل للشيخ عيسى بن حمد بن جاسم بن ثاني آل ثاني، وهي مسجلة في الدوحة. منذ تأسيسها في عام 2007، حققت الغرافة نموًا مستدامًا وتنوعًا ملحوظًا، مما يعكس التزامها بتقديم حلول مبتكرة في مجالات التجارة والمقاولات. نحن نؤمن بأن الجودة والمتانة هما أساس كل مشروع، ونسعى دائمًا لبناء مشاريع تدوم طويلاً وتلبي احتياجات عملائنا وتوقعاتهم",
+            aboutUsService1: "خدمات شاملة",
+            aboutUsService2: "تكنولوجيا متقدمة",
+            aboutUsService3: "الشفافية",
+            downloadBrochure: "تحميل الكتيب",
+            supportText: "اتصل بمركز الدعم على مدار الساعة",
+            supportNumber: "(+974)66554433",
+            servicesSectionTitle: "خدماتنا",
+            servicesHeading: "خدماتنا في البناء",
+            serviceCivilTitle: "قسم المدني",
+            serviceArchTitle: "تصميم معماري",
+            serviceElectrTitle: "قسم الكهرباء",
+            serviceMechTitle: "قسم الميكانيكا",
+            serviceDesignTitle: "التصميم والمشاريع",
+            servicePurchTitle: " قسم المشتريات",
+            serviceLogisTitle: "قسم اللوجستيات",
+            serviceProjMngTitle: "إدارة المشاريع",
+            whyChooseUsTitle: "لماذا تختارنا؟",
+            whyChooseUsHeading: "لماذا نحن خيارك الأفضل",
+            whyChooseUsDescription:
+              "قمنا بتجميع فريق عمل احترافي في ادارة والانشاءات والتعامل مع المعدات المختلفة ذو رؤية مستقبلية في استغلال الموارد التصنيعية المتنوعة المتاحة في دولة قطر، تتيح شركة الغرافة لعملاءها الكرام تقديم خدماتها الاحترافية باسعار تنافسية بكفاءة وجودة عالية، تشمل خبرتنا مجموعة متنوعة من القطاعات مثل بناء الوحدات السكنية والتجارية والمنشآت الصناعية ومرافق الرياضة وتنسيق الحدائي",
+            whyChooseObjectivesTitle: "أهدافنا",
+            whyChooseObjectivesDescription:
+              "تتمثل أهداف شركة الغرافة للتجارة والمقاولات في تنفيذ جميع جوانب الأنشطة الهندسية والإنشائية المتعلقة بالهندسة المدنية والميكانيكية والكهربائية، بالإضافة إلى المشتريات الهندسية واختبارات التشغيل وبدء التشغيل.",
+            whyChooseCompletedProjects: "المشاريع المكتملة",
+            whyChooseCompletedProjects2: "المشاريع المكتملة",
+            whyChooseCompletedProjects3: "المشاريع المكتملة",
+
+            whyChooseStrengthsTitle: "مايميزنا",
+            whyChooseStrengthsDescription:
+              "الوصول الى الاحتياطيات والموارد الواسعة التي تمتلكها الشركات التي لديها اسطولا كبيرا من معدات البناء ومعدات تحريك التربة في المنطقة واحدة من مميزات شركة الغرافة، من ناحية اخرى تمتلك الغرافة مجموعة كبيرة من العمالة الماهرة وفريقا من المدراء والمهندسين المحترفين وذوي الخبرة في الاشراف",
+            whyChoosePhilosophyTitle: "فلسفتنا",
+            whyChoosePhilosophyDescription:
+              "تتمثل فلسفة شركة الغرافة للتجارة والمقاولات في الجودة والموثوقية والخبرة في الخدمات. يلتزم فريق الادارة والعمالة بتنفيذ هذه الفلسفة في جميع اعمالهم اليومية",
+            ourProjectsTitle: "مشاريعنا",
+            ourProjectsHeading: "استكشف مجموعة مشاريعنا المتنوعة",
+            ourProjectsDescription:
+              "نتخصص في مجموعة واسعة من خدمات البناء، بما في ذلك المشاريع السكنية والتجارية والصناعية",
+            project1Title: "مجمع سكني B+G+7",
+            project1Description:
+              "مجمع سكني يتكون من 35 شقة، بمساحة مبنية قدرها 4,531.10 متر مربع سيلبي الحاجة المتزايدة لخدمات الإسكان في أم غويلينة",
+            project2Title: "4 فيلات (G+F+PH)",
+            project2Description:
+              "مجمع فيلات يتكون من 4 فيلات، بمساحة مبنية قدرها 4,720 متر مربع سيلبي الحاجة المتزايدة لخدمات الإسكان في ازغوى",
+            project3Title: "6 فيلات (G+1+PH) وملحقاتها",
+            project3Description:
+              "مجمع فيلات يتكون من 6 فيلات، بمساحة مبنية قدرها 4,780 متر مربع سيلبي الحاجة المتزايدة لخدمات الإسكان في ازغوى",
+            project4Title: "50 فيلا (G+1+PH)",
+            project4Description:
+              'مجمع فيلات يتكون من 50 ونادي عائلي النادي، وحمام سباحة، ومحطة تحويل، وغرف حارس لعملائنا المميزين "إسكان". بمساحة مبنية قدرها 13,439.90 متر مربع سيلبي الحاجة المتزايدة لخدمات الإسكان لموظفي الحكومة',
+            viewAllProjectsBtn: "عرض جميع المشاريع",
+            ctaBoxTitle: "لنقم ببناء شيء رائع معًا!",
+            ctaBoxDescription:
+              "لا تنتظر أكثر لجعل أحلامك في البناء تتحقق. تعاون مع ATGC واختبر خدمة وجودة لا مثيل لها",
+            ctaBoxBtn: "اتصل بنا",
+          },
+        };
+
+        // Update text content for hero slider
+        document.getElementById("heroTitle1").innerText =
+          translations[language].heroTitle1;
+        document.getElementById("heroHeading1").innerText =
+          translations[language].heroHeading1;
+        document.getElementById("heroDescription1").innerText =
+          translations[language].heroDescription1;
+        document.getElementById("heroButton1").innerText =
+          translations[language].heroButton1;
+        document.getElementById("heroButton2").innerText =
+          translations[language].heroButton2;
+
+        document.getElementById("heroTitle2").innerText =
+          translations[language].heroTitle2;
+        document.getElementById("heroHeading2").innerText =
+          translations[language].heroHeading2;
+        document.getElementById("heroDescription2").innerText =
+          translations[language].heroDescription2;
+        document.getElementById("heroButton3").innerText =
+          translations[language].heroButton3;
+        document.getElementById("heroButton4").innerText =
+          translations[language].heroButton4;
+
+        // Update text content for main menu
+        document.getElementById("navHome").innerText =
+          translations[language].navHome;
+        document.getElementById("navAbout").innerText =
+          translations[language].navAbout;
+        document.getElementById("navChairmansMessage").innerText =
+          translations[language].navChairmansMessage;
+        document.getElementById("navHsePolicy").innerText =
+          translations[language].navHsePolicy;
+        document.getElementById("navManagementStaff").innerText =
+          translations[language].navManagementStaff;
+        document.getElementById("navVehiclesEquipments").innerText =
+          translations[language].navVehiclesEquipments;
+        document.getElementById("navMep").innerText =
+          translations[language].navMep;
+        document.getElementById("navCarpentry").innerText =
+          translations[language].navCarpentry;
+        document.getElementById("navCertificate").innerText =
+          translations[language].navCertificate;
+        document.getElementById("navProjects").innerText =
+          translations[language].navProjects;
+        document.getElementById("navOngoingProjects").innerText =
+          translations[language].navOngoingProjects;
+        document.getElementById("navCompletedProjects").innerText =
+          translations[language].navCompletedProjects;
+        document.getElementById("navCareer").innerText =
+          translations[language].navCareer;
+        document.getElementById("navContact").innerText =
+          translations[language].navContact;
+        document.getElementById("aboutUsTitle").innerText =
+          translations[language].aboutUsTitle;
+        document.getElementById("navDivisions").innerText =
+          translations[language].navDiv;
+        document.getElementById("aboutUsHeading").innerText =
+          translations[language].aboutUsHeading;
+        document.getElementById("aboutUsDescription").innerText =
+          translations[language].aboutUsDescription;
+        document.getElementById("aboutUsService1").innerText =
+          translations[language].aboutUsService1;
+        document.getElementById("aboutUsService2").innerText =
+          translations[language].aboutUsService2;
+        document.getElementById("aboutUsService3").innerText =
+          translations[language].aboutUsService3;
+        document.getElementById("downloadBrochure").innerText =
+          translations[language].downloadBrochure;
+        document.getElementById("supportText").innerText =
+          translations[language].supportText;
+        document.getElementById("supportNumber").innerText =
+          translations[language].supportNumber;
+        document.getElementById("servicesSectionTitle").innerText =
+          translations[language].servicesSectionTitle;
+        document.getElementById("servicesHeading").innerText =
+          translations[language].servicesHeading;
+        document.getElementById("serviceCivilTitle").innerText =
+          translations[language].serviceCivilTitle;
+        document.getElementById("serviceArchTitle").innerText =
+          translations[language].serviceArchTitle;
+        document.getElementById("serviceElectrTitle").innerText =
+          translations[language].serviceElectrTitle;
+        document.getElementById("serviceMechTitle").innerText =
+          translations[language].serviceMechTitle;
+        document.getElementById("serviceDesignTitle").innerText =
+          translations[language].serviceDesignTitle;
+        document.getElementById("servicePurchTitle").innerText =
+          translations[language].servicePurchTitle;
+        document.getElementById("serviceLogisTitle").innerText =
+          translations[language].serviceLogisTitle;
+        document.getElementById("serviceProjMngTitle").innerText =
+          translations[language].serviceProjMngTitle;
+        document.getElementById("whyChooseUsTitle").innerText =
+          translations[language].whyChooseUsTitle;
+        document.getElementById("whyChooseUsHeading").innerText =
+          translations[language].whyChooseUsHeading;
+        document.getElementById("whyChooseUsDescription").innerText =
+          translations[language].whyChooseUsDescription;
+        document.getElementById("whyChooseObjectivesTitle").innerText =
+          translations[language].whyChooseObjectivesTitle;
+        document.getElementById("whyChooseObjectivesDescription").innerText =
+          translations[language].whyChooseObjectivesDescription;
+        document.getElementById("whyChooseCompletedProjects").innerText =
+          translations[language].whyChooseCompletedProjects;
+        document.getElementById("whyChooseCompletedProjects2").innerText =
+          translations[language].whyChooseCompletedProjects2;
+        document.getElementById("whyChooseCompletedProjects3").innerText =
+          translations[language].whyChooseCompletedProjects3;
+
+        document.getElementById("whyChooseStrengthsTitle").innerText =
+          translations[language].whyChooseStrengthsTitle;
+        document.getElementById("whyChooseStrengthsDescription").innerText =
+          translations[language].whyChooseStrengthsDescription;
+        document.getElementById("whyChoosePhilosophyTitle").innerText =
+          translations[language].whyChoosePhilosophyTitle;
+        document.getElementById("whyChoosePhilosophyDescription").innerText =
+          translations[language].whyChoosePhilosophyDescription;
+        document.getElementById("ourProjectsTitle").innerText =
+          translations[language].ourProjectsTitle;
+        document.getElementById("ourProjectsHeading").innerText =
+          translations[language].ourProjectsHeading;
+        document.getElementById("ourProjectsDescription").innerText =
+          translations[language].ourProjectsDescription;
+        document.getElementById("project1Title").innerText =
+          translations[language].project1Title;
+        document.getElementById("project1Description").innerText =
+          translations[language].project1Description;
+        document.getElementById("project2Title").innerText =
+          translations[language].project2Title;
+        document.getElementById("project2Description").innerText =
+          translations[language].project2Description;
+        document.getElementById("project3Title").innerText =
+          translations[language].project3Title;
+        document.getElementById("project3Description").innerText =
+          translations[language].project3Description;
+        document.getElementById("project4Title").innerText =
+          translations[language].project4Title;
+        document.getElementById("project4Description").innerText =
+          translations[language].project4Description;
+        document.getElementById("viewAllProjectsBtn").innerText =
+          translations[language].viewAllProjectsBtn;
+        document.getElementById("ctaBoxTitle").innerText =
+          translations[language].ctaBoxTitle;
+        document.getElementById("ctaBoxDescription").innerText =
+          translations[language].ctaBoxDescription;
+        document.getElementById("ctaBoxBtn").innerText =
+          translations[language].ctaBoxBtn;
+      }
+    </script>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        if (sidebar.style.width === "250px") {
+          sidebar.style.width = "0";
+        } else {
+          sidebar.style.width = "250px";
+        }
+      }
+
+      function closeSidebar() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
+
+      // Toggle dropdowns within the sidebar
+      var dropdownBtns = document.getElementsByClassName("dropdown-btn");
+      for (var i = 0; i < dropdownBtns.length; i++) {
+        dropdownBtns[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/app.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <!-- <script src="../../assets/js/theme-panel.js"></script> -->
+  </body>
+
+  <!-- Mirrored from demo.awaikenthemes.com/html-preview/ATGC/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 07:34:14 GMT -->
+</html>

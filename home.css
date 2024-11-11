@@ -1,0 +1,8 @@
+select:focus {
+  outline: none;
+}
+
+.language-select-dropdown select option:hover {
+  background-color: #d42636;
+  cursor: pointer;
+}
