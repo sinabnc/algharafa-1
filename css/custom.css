@@ -50,6 +50,7 @@
 /*** 	   02. General css		  ***/
 /************************************/
 
+/* CSS */
 body {
   font-family: var(--default-font);
   font-size: 18px;
@@ -58,7 +59,19 @@ body {
   color: var(--text-color);
   background-color: var(--white-color);
   overflow-x: hidden;
+  
 }
+
+.arabic-text {
+  text-align: right;
+  direction: rtl;
+}
+
+.english-text {
+  text-align: left;
+  direction: ltr;
+}
+
 
 p {
   line-height: 1.6em;

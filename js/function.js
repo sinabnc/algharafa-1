@@ -324,27 +324,62 @@
 
 // Language Change function
 
+// Function to change language
 function changeLanguage() {
   let currentLanguage = localStorage.getItem("currentLanguage");
   const textSpan = document.getElementById("currentLanguage");
   const textSpanMobile = document.getElementById("currentLanguage-mobile");
 
   if (!currentLanguage) {
-    currentLanguage = "en";
+    currentLanguage = "en";  // Default to English if no language is set
     localStorage.setItem("currentLanguage", currentLanguage);
   }
 
-
+  // Toggle language
   const newLanguage = currentLanguage === "en" ? "ar" : "en";
   localStorage.setItem("currentLanguage", newLanguage);
 
-
+  // Update the language switcher text
   textSpan.innerText = newLanguage === "en" ? "عربي" : "English";
   textSpanMobile.innerText = newLanguage === "en" ? "عربي" : "English";
 
+  // Apply text direction based on the new language
+  applyTextDirection(newLanguage === "en");
+
+  // Call the translate function (assuming it exists to handle the translation)
   translate(newLanguage);
   closeSidebar();
 }
+
+// Function to apply text alignment based on language
+function applyTextDirection(isEnglish) {
+  // Clear existing body text alignment
+  document.body.style.textAlign = "";
+
+  // Apply alignment and direction based on language
+  if (isEnglish) {
+    document.body.style.textAlign = "left";  // Set to left for English
+  } else {
+    document.body.style.textAlign = "right"; // Set to right for Arabic
+  }
+
+  // Update text direction classes for elements with language-specific classes
+  document.querySelectorAll('.english-text').forEach(element => {
+    element.classList.remove('arabic-text');
+    element.classList.add('english-text');
+  });
+  
+  document.querySelectorAll('.arabic-text').forEach(element => {
+    element.classList.remove('english-text');
+    element.classList.add('arabic-text');
+  });
+}
+
+// Apply text direction on page load based on saved language
+document.addEventListener("DOMContentLoaded", () => {
+  const currentLanguage = localStorage.getItem("currentLanguage") || "en"; // Default to English if not set
+  applyTextDirection(currentLanguage === "en");
+});
 
 
 // On page load
