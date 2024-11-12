@@ -136,7 +136,6 @@ tfoot td {
             <!-- Logo End -->
   
             <!-- Toggle Button for Mobile -->
-            <div class="sidebar-toggler" onclick="toggleSidebar()">☰</div>
   
             <!-- Main Menu Start -->
             <div class="collapse navbar-collapse main-menu" id="navbarMenu">
@@ -244,15 +243,29 @@ tfoot td {
   
               <!-- Language Selector (Aligned to the right) -->
             </div>
-            <div class="language-select-dropdown">
-              <select
-                id="languageSelectorDesktop"
-                onchange="changeLanguage('desktop')"
+            <div class="navbar-end">
+              <button
+                id="language-button "
+                onclick="changeLanguage()"
+                class="language-select-ghost-button desktop"
               >
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-              </select>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                  ></path>
+                </svg>
+                <span id="currentLanguage">English</span>
+              </button>
+  
+              <div class="sidebar-toggler" onclick="toggleSidebar()">☰</div>
             </div>
+  
             <div id="mySidebar" class="sidebar">
               <a
                 href="javascript:void(0)"
@@ -260,48 +273,59 @@ tfoot td {
                 onclick="closeSidebar()"
                 >×</a
               >
-              <a href="index.html" id="navHome">Home</a>
-              <a class="dropdown-btn">About</a>
-              <div class="dropdown-container">
-                <a href="about.html" id="navChairmansMessage"
-                  >CHAIRMAN'S MESSAGE</a
-                >
-                <a href="about-hse.html" id="navHsePolicy">HSE & QC POLICY</a>
-                <a href="staff.html" id="navManagementStaff"
-                  >MANAGEMENT & STAFF</a
-                >
-                <a href="vahcle.html" id="navVehiclesEquipments"
-                  >VEHICLES & EQUIPMENTS</a
-                >
+              <div>
+                <a href="index.html" id="navHome">Home</a>
+                <a class="dropdown-btn">About</a>
+                <div class="dropdown-container">
+                  <a href="about.html" id="navChairmansMessage"
+                    >CHAIRMAN'S MESSAGE</a
+                  >
+                  <a href="about-hse.html" id="navHsePolicy">HSE & QC POLICY</a>
+                  <a href="staff.html" id="navManagementStaff"
+                    >MANAGEMENT & STAFF</a
+                  >
+                  <a href="vahcle.html" id="navVehiclesEquipments"
+                    >VEHICLES & EQUIPMENTS</a
+                  >
+                </div>
+                <a class="dropdown-btn">Projects</a>
+                <div class="dropdown-container">
+                  <a href="project-on.html" id="navOngoingProjects"
+                    >Ongoing Projects</a
+                  >
+                  <a href="project.html" id="navCompletedProjects"
+                    >Completed Projects</a
+                  >
+                </div>
+                <a href="certificate.html" id="navCertificate">Certificate</a>
+                <a class="dropdown-btn">Divisions</a>
+                <div class="dropdown-container">
+                  <a href="mep.html" id="navMep">MEP</a>
+                  <a href="carpentry.html" id="navCarpentry">Carpentry</a>
+                </div>
+                <a href="career.html" id="navCareer">Career</a>
+                <a href="contact.html" id="navContact">Contact</a>
               </div>
-              <a class="dropdown-btn">Projects</a>
-              <div class="dropdown-container">
-                <a href="project-on.html" id="navOngoingProjects"
-                  >Ongoing Projects</a
-                >
-                <a href="project.html" id="navCompletedProjects"
-                  >Completed Projects</a
-                >
-              </div>
-              <a href="certificate.html" id="navCertificate">Certificate</a>
-              <a class="dropdown-btn">Divisions</a>
-              <div class="dropdown-container">
-                <a href="mep.html" id="navMep">MEP</a>
-                <a href="carpentry.html" id="navCarpentry">Carpentry</a>
-              </div>
-              <a href="career.html" id="navCareer">Career</a>
-              <a href="contact.html" id="navContact">Contact</a>
   
               <!-- Language Selector -->
-              <div class="language-select-dropdown mobile">
-                <select
-                  id="languageSelectorMobile"
-                  onchange="changeLanguage('mobile')"
+              <button
+                id="language-button"
+                onclick="changeLanguage()"
+                class="language-select-ghost-button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
                 >
-                  <option value="en">English</option>
-                  <option value="ar">Arabic</option>
-                </select>
-              </div>
+                  <path
+                    d="M247.15,212.42l-56-112a8,8,0,0,0-14.31,0l-21.71,43.43A88,88,0,0,1,108,126.93,103.65,103.65,0,0,0,135.69,64H160a8,8,0,0,0,0-16H104V32a8,8,0,0,0-16,0V48H32a8,8,0,0,0,0,16h87.63A87.76,87.76,0,0,1,96,116.35a87.74,87.74,0,0,1-19-31,8,8,0,1,0-15.08,5.34A103.63,103.63,0,0,0,84,127a87.55,87.55,0,0,1-52,17,8,8,0,0,0,0,16,103.46,103.46,0,0,0,64-22.08,104.18,104.18,0,0,0,51.44,21.31l-26.6,53.19a8,8,0,0,0,14.31,7.16L148.94,192h70.11l13.79,27.58A8,8,0,0,0,240,224a8,8,0,0,0,7.15-11.58ZM156.94,176,184,121.89,211.05,176Z"
+                  ></path>
+                </svg>
+                <span id="currentLanguage-mobile">English</span>
+              </button>
             </div>
           </nav>
           <div class="responsive-menu"></div>
