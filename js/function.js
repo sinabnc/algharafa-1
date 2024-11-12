@@ -343,7 +343,7 @@ function changeLanguage() {
   textSpan.innerText = newLanguage === "en" ? "عربي" : "English";
   textSpanMobile.innerText = newLanguage === "en" ? "عربي" : "English";
 
-  // Apply text direction based on the new language
+  // Apply text direction and RTL class based on the new language
   applyTextDirection(newLanguage === "en");
 
   // Call the translate function (assuming it exists to handle the translation)
@@ -359,8 +359,10 @@ function applyTextDirection(isEnglish) {
   // Apply alignment and direction based on language
   if (isEnglish) {
     document.body.style.textAlign = "left";  // Set to left for English
+    document.body.classList.remove("rtl");   // Remove RTL class for English
   } else {
     document.body.style.textAlign = "right"; // Set to right for Arabic
+    document.body.classList.add("rtl");      // Add RTL class for Arabic
   }
 
   // Update text direction classes for elements with language-specific classes
@@ -380,6 +382,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentLanguage = localStorage.getItem("currentLanguage") || "en"; // Default to English if not set
   applyTextDirection(currentLanguage === "en");
 });
+
 
 
 // On page load
