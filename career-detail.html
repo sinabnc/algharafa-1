@@ -355,139 +355,69 @@
     <div class="container mt-5">
       <div class="row">
         <!-- Job Details Section -->
-        <div class="col-lg-7">
-          <div class="job-details">
-            <h1>Civil Engineer</h1>
-            <div class="job-info">
-              <p><strong>Job Category:</strong> Engineer</p>
-              <p><strong>Job Type:</strong> Full Time</p>
-              <p><strong>Job Location:</strong> Doha</p>
-            </div>
-            <div class="job-description">
-              <p>
-                A leading international engineering practice, offering services
-                in architecture, interior design, master planning, landscape,
-                urban design, and building consultancy within Asia & Middle
-                East, currently requires a Senior Civil Engineer to join their
-                organization.
-              </p>
-
-              <h4>Qualification:</h4>
-              <ul>
-                <li>
-                  Minimum Bachelor’s Degree in Civil Engineering or relevant
-                  subject
-                </li>
-                <li>
-                  Education qualification obtained from North America, West
-                  Europe, Australia
-                </li>
-                <li>
-                  Holder of Chartered Membership in relevant discipline (e.g.,
-                  Engineering) would be an advantage
-                </li>
-                <li>
-                  MBA and/or secondary relevant degree would be advantageous
-                </li>
-                <li>Holder of current/valid Driving License</li>
-              </ul>
-
-              <h4>Experience:</h4>
-              <ul>
-                <li>
-                  15 years of cumulative experience in a relevant field, minimum
-                  5 years in treated/waste water including managing contractors
-                  and leading the team
-                </li>
-                <li>
-                  Experience of working in a multidisciplinary organization
-                  preferably in the Middle East
-                </li>
-                <li>
-                  Knowledge and experience in Contract Management. Ability to
-                  deliver and support change
-                </li>
-                <li>
-                  Knowledge of Quality, Health and Safety, and Environment
-                  policies, procedures, and regulations
-                </li>
-                <li>Competent in Microsoft Office Packages</li>
-                <li>
-                  Ability to influence and engage stakeholders and staff at all
-                  levels within the organization
-                </li>
-                <li>
-                  Ability to communicate verbally and in writing in English is
-                  mandatory
-                </li>
-                <li>
-                  Ability to communicate verbally and in writing in Arabic is
-                  preferred
-                </li>
-              </ul>
-              <p>If you fit the criteria, please feel free to apply.</p>
-            </div>
-          </div>
-        </div>
+        
 
         <!-- Apply Form Section -->
-        <div class="col-lg-5">
-          <div class="apply-form">
-            <h2>Apply for this position</h2>
-            <form id="applicationForm">
-              <div class="mb-3">
-                <label for="fullName" class="form-label"
-                  >Full Name <span class="text-danger">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fullName"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label"
-                  >Email <span class="text-danger">*</span></label
-                >
-                <input type="email" class="form-control" id="email" required />
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="form-label"
-                  >Phone <span class="text-danger">*</span></label
-                >
-                <input type="tel" class="form-control" id="phone" required />
-              </div>
-              <div class="mb-3">
-                <label for="coverLetter" class="form-label"
-                  >Cover Letter <span class="text-danger">*</span></label
-                >
-                <textarea
-                  class="form-control"
-                  id="coverLetter"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="resume" class="form-label"
-                  >Upload CV/Resume <span class="text-danger">*</span></label
-                >
-                <input
-                  type="file"
-                  class="form-control"
-                  id="resume"
-                  accept=".pdf"
-                  required
-                />
-                <small class="form-text text-muted">Allowed Types: .pdf</small>
-              </div>
-              <button type="submit" class="btn btn-danger w-100">
-                Submit Application
-              </button>
-            </form>
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+          <div class="col-lg-5">
+            <div class="apply-form">
+              <h2>Apply for this position</h2>
+              <form id="applicationForm">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">
+                    Full Name <span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">
+                    Email <span class="text-danger">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="email" required />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">
+                    Phone <span class="text-danger">*</span>
+                  </label>
+                  <input type="tel" class="form-control" id="phone" required />
+                </div>
+                <div class="mb-3">
+                  <label for="coverLetter" class="form-label">
+                    Cover Letter <span class="text-danger">*</span>
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="coverLetter"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="resume" class="form-label">
+                    Upload CV/Resume <span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="resume"
+                    accept=".pdf"
+                    required
+                  />
+                  <small class="form-text text-muted">Allowed Types: .pdf</small>
+                </div>
+                <button type="submit" class="btn btn-danger w-100">
+                  Submit Application
+                </button>
+              </form>
+            </div>
           </div>
         </div>
+        
       </div>
     </div>
     <footer class="main-footer" style="padding: 60px 0">
@@ -738,7 +668,7 @@
               Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "agtcmail51@gmail.com",
-                Password: "E1197E95A1F5F8137B88884608BD6C837BA8",
+                Password: "01DBB4F52DF40BFF2F6496C89B181B03529C",
                 To: "agtcmail51@gmail.com",
                 From: "agtcmail51@gmail.com",
                 Subject: `Job Application: ${fullName}`,
