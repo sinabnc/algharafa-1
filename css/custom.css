@@ -1003,10 +1003,10 @@ body.rtl .about-content-body ul li:before {
 
 .modal-content {
   margin: auto;
-  top: 25%;
+  top: 10%;
   display: block;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 1000px;
+  max-height: 600px;
   transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
